@@ -1,185 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"
-    data-scrapbook-source="https://doity.com.br/admin/pesquisas_resultados/index/1402"
-    data-scrapbook-create="20251201182439741" data-scrapbook-title="Resultado da pesquisa de satisfação - Doity">
+$(document).ready(function() {
+    const isInPages = window.location.pathname.includes("/pages/");
+    const pathPrefix = isInPages ? "../" : "./";
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>
-        Resultado da pesquisa de satisfação -
-        Doity </title>
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/960.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/thickbox.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/doitystrap.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin_text.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/gray.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/datepicker.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/form.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/menu.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/messages.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/statics.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/tabs.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/wysiwyg.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/wysiwyg.modal.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/wysiwyg-editor.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.thumbs.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-tooltip.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.sidr.light.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin_v2.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin_responsive.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/croppie.css">
-
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="apple-touch-icon"
-        href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/favicon.png">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="robots" content="noindex">
-
-
-
-    <!-- Google Tag Manager -->
-
-    <!-- End Google Tag Manager -->
-
-</head>
-
-<body>
-
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="index_1.html" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div id="ajax-loader" style="display: none;">
-        <div>
-            <img src="ajax-loader-center.gif" id="img-ajax-load-center" alt=""> <span
-                class="ajax-loader-message"></span>
-        </div>
-    </div>
-    <style type="text/css">
-        #ajax-loader {
-            background-color: #111;
-            bottom: 0;
-            left: 0;
-            position: fixed;
-            right: 0;
-            top: 0;
-            z-index: 1060;
-            background: rgba(0, 0, 0, 0.1);
-        }
-
-        #ajax-loader div {
-            display: block;
-            height: 10%;
-            left: 50%;
-            margin: -150px 0 0 -280px;
-            outline: medium none;
-            position: fixed;
-            top: 60%;
-            width: 560px;
-            z-index: 2050;
-        }
-
-        #ajax-loader span.ajax-loader-message {
-            display: none;
-            position: fixed;
-            background: #FCF8E3;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 0 auto;
-            top: 50%;
-            margin-top: -20px;
-            font-size: 12px;
-            color: #8a6d3b;
-            border: 1px solid #faebcc;
-        }
-
-        #img-ajax-load-center {
-            background-color: #000000;
-            border-radius: 6px;
-            padding: 8px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -24px;
-            margin-top: -24px;
-
-
-            opacity: 0.75;
-            -moz-opacity: 0.75;
-            filter: alpha(opacity=75);
-        }
-    </style>
-    <div id="wrapper">
-        <div class="container" style="width: 100% !important">
-            <div class="menu">
-                <ul class="sf-js-enabled">
-
-
-                    <li>
-                        <a href="https://doity.com.br/admin">Painel</a>
-                    </li>
-
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/eventos">Eventos</a>
-                    </li>
-
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/users">Usuários</a>
-                        <ul class="sf-js-enabled">
-                            <li><a href="https://doity.com.br/admin/users">Usuários</a></li>
-                            <li><a href="https://doity.com.br/admin/roles">Perfis</a></li>
-                            <li><a href="https://doity.com.br/admin/acl/acl_permissions">Permissões</a></li>
-                        </ul>
-                    </li>
-
-                    <!--<li class="break"></li>
-    
-    <li>
-        <a href="/admin/settings/prefix/Site">Configurações</a>        <ul class="sf-js-enabled">
-            <li><a href="/admin/settings/prefix/Site">Site</a></li>
-            <li><a href="/admin/settings/prefix/Meta">Meta</a></li>
-            <li><a href="/admin/settings/prefix/Whitelabel">Whitelabel</a></li>
-        </ul>
-    </li>
-    -->
-
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/compras">Transações</a>
-                    </li>
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/painel">Dashboard</a>
-                    </li>
-                    <li class="break"></li>
-
-
-
-                </ul>
-
-            </div>
-            <div class="holder-parent">
-                <div class="holder-left">
-
-
-
-                    <div class="box big">
+    const menuHTML = `
+        <div class="box big">
                         <div class="content">
                             <a href="https://doity.com.br/admin" style="margin-bottom: 20px;"><img
-                                    src="logo-doity-black.png" style="width: 90px;" alt=""></a>
+                                    src="${pathPrefix}assets/img/logo-doity-black.png" style="width: 90px;" alt=""></a>
                             <ul class="nav-left" id="admin-nav" style="overflow-y: scroll;">
 
                                 <!-- opcoes do admin-->
@@ -484,7 +311,7 @@
                                         <li class="">
                                             <a href="https://doity.com.br/admin/etiquetas/index/279481">
                                                 <span style="display: flex; align-items: center; gap: 5px;">
-                                                    Etiquetas <img src="selo-pro.svg" alt=""
+                                                    Etiquetas <img src="${pathPrefix}assets/img/selo-pro.svg" alt=""
                                                         style="margin: 0; width: 13px; height: 13px;"> </span>
                                             </a>
                                         </li>
@@ -493,7 +320,7 @@
                                         <li class="">
                                             <a href="https://doity.com.br/admin/entradas_saidas/index/279481">
                                                 <span style="display: flex; align-items: center; gap: 5px;">
-                                                    Entrada/Saída <img src="selo-pro.svg" alt=""
+                                                    Entrada/Saída <img src="${pathPrefix}assets/img/selo-pro.svg" alt=""
                                                         style="margin: 0; width: 13px; height: 13px;"> </span>
                                             </a>
                                         </li>
@@ -654,7 +481,7 @@
                                                 stroke-linejoin="round"></path>
                                         </svg>
                                         <span style="display: flex; align-items: center; gap: 5px;">
-                                            Aplicativo <img src="selo-pro.svg" alt=""
+                                            Aplicativo <img src="${pathPrefix}assets/img/selo-pro.svg" alt=""
                                                 style="margin: 0; width: 13px; height: 13px;"> </span>
                                     </a>
                                 </li>
@@ -685,7 +512,7 @@
                                                 stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
                                         <span style="display: flex; align-items: center; gap: 5px;">
-                                            Mala direta <img src="selo-pro.svg" alt=""
+                                            Mala direta <img src="${pathPrefix}assets/img/selo-pro.svg" alt=""
                                                 style="margin: 0; width: 13px; height: 13px;"> </span>
                                     </a>
                                 </li>
@@ -707,7 +534,7 @@
                                                 stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
                                         <span style="display: flex; align-items: center; gap: 5px;">
-                                            Trabalhos <img src="selo-pro.svg" alt=""
+                                            Trabalhos <img src="${pathPrefix}assets/img/selo-pro.svg" alt=""
                                                 style="margin: 0; width: 13px; height: 13px;"> </span>
                                     </a>
                                 </li>
@@ -804,7 +631,6 @@
                             </ul>
                         </div>
                     </div>
-
                     <div id="modalCredenciamentoMenu" style="display:none; ">
                         <div id="modal_wrapper_shadow-lote" class="modal_wrapper_shadow"></div>
                         <div class="modal modal-custom fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -813,7 +639,7 @@
                             <div id="modal_premium_content" class="modal_mobile d_display-flex d_gap-10 d_padding-20">
                                 <div id="modal_premium_image" class="d_border_radius-10"
                                     style="background-color: #FFBEBE;">
-                                    <img src="selo-pro.gif" alt="" style="max-height: 370px;">
+                                    <img src="${pathPrefix}assets/img/selo-pro.gif" alt="" style="max-height: 370px;">
                                 </div>
                                 <div id="modal_premium_text"
                                     class="d_border_radius-10 d_display-flex d_flex-column d_align-none"
@@ -827,24 +653,24 @@
                                     <div id="modal_premium_list" style="margin: 51.5px 0"
                                         class="d_display-flex d_flex-column d_align-none d_gap-05">
                                         <span class="d_display-flex d_gap-10">
-                                            <img src="selo-pro.svg" style="width: 13px; height: 13px;">
+                                            <img src="${pathPrefix}assets/img/selo-pro.svg" style="width: 13px; height: 13px;">
                                             <p class="d_text-dark d_font_size-10">Credenciamento direto</p>
                                         </span>
                                         <span class="d_display-flex d_gap-10">
-                                            <img src="selo-pro.svg" style="width: 13px; height: 13px;">
+                                            <img src="${pathPrefix}assets/img/selo-pro.svg" style="width: 13px; height: 13px;">
                                             <p class="d_text-dark d_font_size-10">Credenciamento por ID</p>
                                         </span>
                                         <span class="d_display-flex d_gap-10">
-                                            <img src="selo-pro.svg" style="width: 13px; height: 13px;">
+                                            <img src="${pathPrefix}assets/img/selo-pro.svg" style="width: 13px; height: 13px;">
                                             <p class="d_text-dark d_font_size-10">Credenciar todos os participantes de
                                                 uma vez</p>
                                         </span>
                                         <span class="d_display-flex d_gap-10">
-                                            <img src="selo-pro.svg" style="width: 13px; height: 13px;">
+                                            <img src="${pathPrefix}assets/img/selo-pro.svg" style="width: 13px; height: 13px;">
                                             <p class="d_text-dark d_font_size-10">Gerar etiquetas</p>
                                         </span>
                                         <span class="d_display-flex d_gap-10">
-                                            <img src="selo-pro.svg" style="width: 13px; height: 13px;">
+                                            <img src="${pathPrefix}assets/img/selo-pro.svg" style="width: 13px; height: 13px;">
                                             <p class="d_text-dark d_font_size-10">Gerenciar entrada e saída dos
                                                 participantes </p>
                                         </span>
@@ -856,58 +682,22 @@
                             </div>
                         </div>
                     </div>
+    `;
 
-
-                </div>
-                <div class="holder">
-                    <div class="__headbar doity" style="width: screWidthpx;">
-                        <div class="__centered"
-                            style="display: flex; align-items: center; justify-content: space-between; max-width: 1366px;">
-                            <div class="top2-breadcrumb">
-
-
-                                <div class="breadcrumb" style="padding: 0 35px;">
-                                    <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
-                                            href="https://doity.com.br/admin/eventos/painel/279481">Painel</a><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 20 20" fill="none">
-                                            <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                            </path>
-                                        </svg>Resultado da pesquisa de satisfação </p>
-                                    <span
-                                        style="display: flex; flex-direction: column; justify-content: center; width: fit-content;">Resultado
-                                        da pesquisa de satisfação</span>
-                                </div>
-
-
-
-                                <div id="modal-help" class="contrato modal modal-large">
-
-                                    <div class="modal-header" style="padding: 14px 15px;">
-                                        <button class="close fechar" aria-hidden="true" id="ln_fechar_help"
-                                            data-dismiss="modal" type="button">×</button>
-                                        <span><a href="" target="_blank" id="bt-abrir-na-central">Abrir em outra aba <i
-                                                    class="fa fa-external-link"></i></a></span>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <iframe frameborder="0" height="465px" width="470px" scrolling="yes"
-                                            allowfullscreen=""></iframe>
-                                    </div>
-
-                                </div>
-
-                                <style type="text/css">
-                                    #modal-help iframe {
-                                        position: absolute;
-                                        top: 47px;
-                                        left: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                    }
-                                </style>
-                            </div>
+    const headerHTML = `
+        <div class="__centered">
+                            <a class="nome_evento" href="https://doity.com.br/evento-teste-frontend"
+                                target="_blank">Evento Teste Frontend<svg
+                                    style="margin-left: 3px; width: 10px; height: 10px;"
+                                    xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.97931 1.44397H3.99726C4.18158 1.44397 4.331 1.5934 4.331 1.77772C4.331 1.96204 4.18158 2.11146 3.99726 2.11146H3.00373C2.36498 2.11146 1.91948 2.11218 1.58335 2.15737C1.25683 2.20127 1.08391 2.28157 0.960752 2.40473C0.837597 2.52788 0.757299 2.7008 0.713397 3.02732C0.668206 3.36345 0.667495 3.80895 0.667495 4.44771V4.99624C0.667495 5.635 0.668206 6.08046 0.713397 6.41659C0.757299 6.74313 0.837597 6.91606 0.960752 7.03921C1.08391 7.16237 1.25683 7.24268 1.58335 7.28659C1.91948 7.33175 2.36497 7.33246 3.00373 7.33246H3.55226C4.19101 7.33246 4.63651 7.33175 4.97265 7.28659C5.29918 7.24268 5.47207 7.16237 5.59522 7.03921C5.71838 6.91606 5.79869 6.74313 5.8426 6.41659C5.8878 6.08046 5.88851 5.635 5.88851 4.99624V4.00269C5.88851 3.81838 6.03793 3.66896 6.22224 3.66896C6.40655 3.66896 6.55597 3.81838 6.55597 4.00269V5.02064C6.55602 5.62922 6.55602 6.11975 6.50415 6.50557C6.45028 6.9061 6.33509 7.24335 6.06722 7.51121C5.79935 7.77903 5.46211 7.89428 5.06158 7.9481C4.67576 7.99997 4.18523 7.99996 3.57667 7.99996H2.97931C2.37074 7.99996 1.88021 7.99997 1.49441 7.9481C1.09387 7.89428 0.756615 7.77903 0.488763 7.51121C0.22091 7.24335 0.105706 6.9061 0.0518534 6.50557C-1.62058e-05 6.11975 -8.65683e-06 5.62922 2.32023e-07 5.02064V4.42327C-8.65683e-06 3.81471 -1.62058e-05 3.32418 0.0518534 2.93838C0.105706 2.53784 0.22091 2.20058 0.488763 1.93273C0.756615 1.66488 1.09387 1.54968 1.49441 1.49582C1.88021 1.44395 2.37074 1.44396 2.97931 1.44397Z"
+                                        fill="#FF2B34"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.66368 0.667495C5.47937 0.667495 5.32995 0.518073 5.32995 0.33375C5.32995 0.149426 5.47937 0 5.66368 0H7.6662C7.85051 0 7.99993 0.149426 7.99993 0.33375V2.33624C7.99993 2.52056 7.85051 2.66998 7.6662 2.66998C7.48185 2.66998 7.33243 2.52056 7.33243 2.33624V1.13949L4.34222 4.12972C4.21186 4.26007 4.00053 4.26007 3.87021 4.12972C3.73988 3.99939 3.73988 3.78807 3.87021 3.65773L6.86043 0.667495H5.66368Z"
+                                        fill="#FF2B34"></path>
+                                </svg></a>
                             <div class="__left __top_menu-mobile">
                                 <a id="resp-menu" href="#admin-nav">
                                     <i class="fa fa-bars"></i>
@@ -924,7 +714,7 @@
                                     </svg>
                                 </a>
                             </div>
-                            <a href="https://doity.com.br/admin"><img src="logo-doity-black.png" style="width: 90px;"
+                            <a href="https://doity.com.br/admin"><img src="${pathPrefix}assets/img/logo-doity-black.png" style="width: 90px;"
                                     class="doity-logo" alt=""></a>
                             <div class="__right __items-row">
                                 <div class="__notificacoes">
@@ -955,7 +745,7 @@
                                 <div class="__perfil __showAndHide" data-toggle="nav.__menu" id="perfil">
                                     <div class="__avatar">
 
-                                        <img src="1-avatar.png" alt="">
+                                        <img src="${pathPrefix}assets/img/1-avatar.png" alt="">
                                     </div>
                                     <div class="__info">
                                         <h3>
@@ -964,11 +754,6 @@
                                     </div>
                                     <nav class="__menu" id="menu">
                                         <ul class="__menu-root">
-                                            <li>
-                                                <a href="https://ajuda.doity.com.br/" target="_blank">
-                                                    Ajuda!
-                                                </a>
-                                            </li>
                                             <li>
                                                 <a href="https://doity.com.br/admin/users/edit2">Minha Conta</a>
                                             </li>
@@ -1001,462 +786,9 @@
                                 </div><!-- .perfil -->
 
                             </div><!-- .right.items-row -->
-                        </div><!-- .centered -->
-                    </div>
-                    <div class="__left __center-mobile" style="display: none;">
-
-
-                        <div class="breadcrumb" style="padding: 0 35px;">
-                            <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
-                                    href="https://doity.com.br/admin/eventos/painel/279481">Painel</a><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
-                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>Resultado da pesquisa de satisfação </p>
-                            <span
-                                style="display: flex; flex-direction: column; justify-content: center; width: fit-content;">Resultado
-                                da pesquisa de satisfação</span>
                         </div>
-
-
-
-                        <div id="modal-help" class="contrato modal modal-large">
-
-                            <div class="modal-header" style="padding: 14px 15px;">
-                                <button class="close fechar" aria-hidden="true" id="ln_fechar_help" data-dismiss="modal"
-                                    type="button">×</button>
-                                <span><a href="" target="_blank" id="bt-abrir-na-central">Abrir em outra aba <i
-                                            class="fa fa-external-link"></i></a></span>
-                            </div>
-
-                            <div class="modal-body">
-                                <iframe frameborder="0" height="465px" width="470px" scrolling="yes"
-                                    allowfullscreen=""></iframe>
-                            </div>
-
-                        </div>
-
-                        <style type="text/css">
-                            #modal-help iframe {
-                                position: absolute;
-                                top: 47px;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                            }
-                        </style>
-                    </div>
-
-                    <style>
-                        .top2_breadcrumb span {
-                            color: #000;
-                            font-family: Inter;
-                            font-size: 24px;
-                            font-style: normal;
-                            font-weight: 400;
-                        }
-
-                        .holder {
-                            margin: 60px 0 0 0;
-                            height: calc(100vh - 60px);
-                        }
-
-                        .__headbar {
-                            border-bottom: none;
-                        }
-
-                        @media (max-width: 960px) {
-                            .top2_breadcrumb {
-                                display: none;
-                            }
-
-                            .__painel-header {
-                                flex-direction: column;
-                                align-items: flex-start;
-
-                            }
-
-                            .__painel-header .filters {
-                                margin-left: 0;
-                                margin-top: 16px;
-                                max-width: unset;
-                            }
-
-                            .migration-new {
-                                left: 0 !important;
-                                padding: 21px 20px !important;
-                            }
-
-                            .__center-mobile {
-                                display: flex !important;
-                            }
-
-                            .top2-breadcrumb {
-                                display: none;
-                            }
-                        }
-
-                        @media (max-width: 768px) {}
-
-                        @media (max-width: 564px) {
-                            .content_wrapper {
-                                flex-direction: column;
-                            }
-                        }
-
-                        .migration-new {
-                            width: 100%;
-                            background: #D9D9D9;
-                            padding: 21px 91px;
-                            position: fixed;
-                            top: 0;
-                            left: 250px;
-                            z-index: 100;
-                        }
-
-                        .migration-new .content_wrapper {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            max-width: 1366px;
-                            margin: 0 auto;
-                        }
-
-                        .__headbar {
-                            border-bottom: none;
-                        }
-
-                        .holder {
-                            margin: 96px 0 0 0;
-                            height: calc(100vh - 96px);
-                        }
-                    </style>
-
-                    <div style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto;">
-                        <div class="box pesquisa_resultado">
-
-                            <div class="title">
-                                <h2>Resultado da pesquisa de satisfação</h2>
-                                <img src="title-hide.gif" alt="">
-                            </div>
-
-                            <div class="content forms">
-
-                                <div class="mensagem">
-                                </div>
-
-                                <div class="actions">
-                                    <ul>
-                                        <li><a href="https://doity.com.br/admin/pesquisas/index/279481">Configurar
-                                                pesquisa</a></li>
-                                        <li><a
-                                                href="https://doity.com.br/admin/pesquisas_resultados/resultado_excel/1402">Baixar
-                                                resultados</a></li>
-                                    </ul>
-                                </div>
-                                <div class="painel-info-artigos">
-
-                                    <div class="dados_pesquisa">
-                                        <h1>Nome: <strong>Pesquisa de Qualidade do Evento</strong></h1>
-                                        <h1>Data da pesquisa: <strong>01/12/2025</strong></h1>
-                                        <h1><strong>1 Participante respondeu </strong></h1>
-                                    </div>
-
-
-                                    <div id="graficos_pesquisa">
-
-
-
-                                        <div id="content-grafico">
-                                            <h1>1 - </h1>
-                                            <div id="piechart1" style="width: 700x; height: 400px;"></div>
-
-
-                                        </div>
-                                        <div id="content-grafico">
-                                            <h1>2 - O conteúdo apresentado foi relevante para você?</h1>
-                                            <div id="piechart2" style="width: 700x; height: 400px;"></div>
-
-
-                                        </div>
-                                        <div id="content-grafico">
-                                            <h1>3 - </h1>
-                                            <div id="piechart3" style="width: 700x; height: 400px;"></div>
-
-
-                                        </div>
-                                        <div id="content-grafico">
-                                            <h1>4 - Como você avalia a organização do evento?</h1>
-                                            <div id="piechart4" style="width: 700x; height: 400px;"></div>
-
-
-                                        </div>
-                                        <div id="content-grafico">
-                                            <h1>5 - Pergunta exemplo</h1>
-                                            <div id="piechart5" style="width: 700x; height: 400px;"></div>
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="comentarios-pesquisa">
-                                        <a href="#" class="mostra-comentarios">Comentários dos participantes</a>
-                                        <div class="comentarios-participantes-pesquisa">
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1 - Tudo ok!</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <style type="text/css">
-                            @media print {
-
-                                .w-header {
-                                    display: none;
-                                }
-
-                                .holder-left {
-                                    display: none;
-                                }
-
-                                .holder-parent {
-                                    border: none;
-                                }
-
-                                .breadcrumb {
-                                    display: none;
-                                }
-
-                                .actions {
-                                    display: none;
-                                }
-
-
-                                .painel-info-artigos {
-                                    width: 100%;
-                                    padding: 0;
-                                    margin: 0;
-                                }
-
-                                .holder {
-                                    width: 100%;
-                                }
-
-                                .holder .box {
-                                    margin: 0;
-                                }
-
-                                .container {
-                                    width: 100%;
-                                    margin: 0;
-                                    padding: 0;
-
-                                }
-
-                                .painel-info-artigos {
-                                    border: none;
-                                }
-
-                                #content-grafico {
-
-                                    page-break-inside: avoid;
-
-
-                                }
-
-                                #content-grafico h1 {
-
-                                    padding-top: 40px;
-
-                                }
-
-                                .top .split:nth-child(2) {
-                                    display: none;
-                                }
-
-
-                            }
-                        </style>
-                    </div>
-                    <div class="footer">
-                        <div id="footer">
-
-                            <p>
-                            </p>
-                            <p>Desenvolvido por <a href="http://doity.com.br/" target="_blank">Doity Plataforma de
-                                    Eventos</a></p>
-                            <p>- 2025 - Todos os direitos reservados
-                            </p>
-                            <p><a href="https://ajuda.doity.com.br/" target="_blank">Central de Ajuda</a>
-                                - <a href="#">Entre em Contato</a></p>
-                            <p></p>
-
-
-
-
-
-
-
-
-                        </div>
-
-                        <style>
-                            #footer {
-                                display: flex;
-                                justify-content: center;
-                                gap: 3px;
-                            }
-
-                            @media (max-width: 768px) {
-                                #footer {
-                                    flex-direction: column;
-                                    align-items: center;
-                                }
-                            }
-                        </style>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="modal-info-feedback-pos-evento" class="modal hide fade modal-medium" role="dialog"
-        aria-labelledby="modal-info-feedback-pos-eventoLabel" aria-hidden="true" style="top: 280px;">
-        <button type="button" id="btn-fechar-info-feedback-pos-evento" class="close feedback-pos-close"
-            aria-label="Close"><span aria-hidden="true">×</span></button>
-        <div class="modal-body modal-feed-back-pos-evento" style="font-size: 13px; min-height: 470px;">
-
-            <h1>Queremos a sua opinião!</h1>
-
-            <p>
-                Prezado(a) <b>Administrator</b>,
-            </p>
-
-            <p>
-                A Doity evoluiu todos esses anos sempre ouvindo o feedback dos nossos clientes
-                e não queremos parar por aqui!
-            </p>
-
-            <p>
-                Sabemos como é difícil e trabalhoso organizar eventos, e nossa missão é justamente facilitar esse
-                trabalho e te ajudar a focar no que é mais importante: a qualidade do seu evento!
-            </p>
-
-            <p>
-                E para fazer uma plataforma cada vez melhor, queremos a
-                sua ajuda respondendo um rápido questionário
-            </p>
-
-            <p id="strong-modal-feedback">Muito obrigado e até o próximo evento!</p>
-
-
-            <div>
-                <a href="https://forms.gle/N36a7xuTSTG9S8qXA" target="_blank"
-                    id="reponder-questionario-destruir-modal"><button id="btn-modal-feedback-pos-evento">Responder
-                        Questionario</button></a>
-
-                <a href="#" id="responder-mais-tarde-feedback-pos-modal">Responder Mais Tarde</a>
-            </div>
-
-
-        </div>
-
-    </div>
-
-    <style>
-        #modal-info-feedback-pos-evento {
-            border: none;
-            max-width: 500px;
-            min-height: 350px !important;
-            border-radius: 15px;
-            display: none;
-
-        }
-
-        .modal-feed-back-pos-evento {
-            min-height: 440px !important;
-            padding: 50px !important;
-            padding-right: 0px !important;
-        }
-
-        .modal-feed-back-pos-evento p {
-            margin-bottom: 18px;
-        }
-
-        .modal-feed-back-pos-evento #strong-modal-feedback {
-            font-weight: bold;
-        }
-
-        #btn-modal-feedback-pos-evento {
-            padding: 15px;
-            background-color: #ff2b34;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #btn-modal-feedback-pos-evento:hover {
-            background-color: #f73941;
-        }
-
-        .feedback-pos-close {
-            padding: 30px !important;
-            padding-top: 20px !important;
-            padding-left: 18px !important;
-            padding-right: 20px !important;
-            text-align: center;
-        }
-
-
-
-        #responder-mais-tarde-feedback-pos-modal {
-            margin-left: 80px;
-        }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
-        .noBreadcrumbPaddingTop {
-            padding-top: 0 !important;
-        }
-    </style>
-
-</body>
-
-</html>
+    `
+    
+    $('#sidebar-container').html(menuHTML);
+    $('#header-container').html(headerHTML);
+});
