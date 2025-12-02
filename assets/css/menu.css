@@ -56,7 +56,7 @@
     background: none repeat scroll 0 0 transparent;
 }
 .menu ul li.break {
-    background-image: url("menu-break.gif");
+    background-image: url("../img/menu-break.gif");
     background-repeat: no-repeat;
     height: 29px;
     margin: 1px 0 0;
@@ -104,7 +104,7 @@
     outline: 0 none;
 }
 .menu ul li.current a, .menu ul li.current a:link, .menu ul li.current a:active, .menu ul li.current a:visited, .menu ul li:hover, .menu ul li.sfHover, .menu ul li a:focus, .menu ul li a:hover {
-    background-image: url("menu-active.gif");
+    background-image: url("../img/menu-active.gif");
     background-position: left 1px;
     background-repeat: repeat-x;
 }
