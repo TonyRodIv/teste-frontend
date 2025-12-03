@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     const isInPages = window.location.pathname.includes("/pages/");
     const pathPrefix = isInPages ? "../" : "./";
 
@@ -788,7 +788,15 @@ $(document).ready(function() {
                             </div><!-- .right.items-row -->
                         </div>
     `
-    
+    $(document).on('click', '.__perfil', function (e) {
+        e.stopPropagation();
+        $(this).toggleClass('active'); 
+    });
+
+    $(document).on('click', function () {
+        $('.__perfil').removeClass('active');
+    });
+
     $('#sidebar-container').html(menuHTML);
     $('#header-container').html(headerHTML);
 });
