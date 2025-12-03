@@ -624,9 +624,8 @@ label.crop-label input {
 /*centralizar conteudo*/
 .__centered  {
     width: 100%;
-    /*max-width: 1000px;*/
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -681,7 +680,7 @@ label.crop-label input {
 
 /*navheader*/
 .__headbar {
-    width: 100%;
+    width: calc(100dvw - 250px);
     display: block;
     padding: 25px 91px;
     background-color: #F6F6F6;

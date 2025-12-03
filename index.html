@@ -10,20 +10,12 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/960.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/thickbox.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/doitystrap.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/admin.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/admin_text.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/gray.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/datepicker.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/menu.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/messages.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/statics.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/tabs.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/wysiwyg.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/wysiwyg.modal.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/wysiwyg-editor.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/jquery.thumbs.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-tooltip.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/jquery.sidr.light.css">
@@ -32,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
     <link rel="apple-touch-icon"
         href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/favicon.png">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,111 +32,13 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="index_1.html" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div id="ajax-loader" style="display: none;">
-        <div>
-            <img src="./assets/img/ajax-loader-center.gif" id="img-ajax-load-center" alt=""> <span
-                class="ajax-loader-message"></span>
-        </div>
-    </div>
-    <style type="text/css">
-        #ajax-loader {
-            background-color: #111;
-            bottom: 0;
-            left: 0;
-            position: fixed;
-            right: 0;
-            top: 0;
-            z-index: 1060;
-            background: rgba(0, 0, 0, 0.1);
-        }
-
-        #ajax-loader div {
-            display: block;
-            height: 10%;
-            left: 50%;
-            margin: -150px 0 0 -280px;
-            outline: medium none;
-            position: fixed;
-            top: 60%;
-            width: 560px;
-            z-index: 2050;
-        }
-
-        #ajax-loader span.ajax-loader-message {
-            display: none;
-            position: fixed;
-            background: #FCF8E3;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 0 auto;
-            top: 50%;
-            margin-top: -20px;
-            font-size: 12px;
-            color: #8a6d3b;
-            border: 1px solid #faebcc;
-        }
-
-        #img-ajax-load-center {
-            background-color: #000000;
-            border-radius: 6px;
-            padding: 8px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -24px;
-            margin-top: -24px;
-
-            opacity: 0.75;
-            -moz-opacity: 0.75;
-            filter: alpha(opacity=75);
-        }
-    </style>
     <div id="wrapper">
         <div class="container" style="width: 100% !important">
-            <div class="menu">
-                <ul class="sf-js-enabled">
-                    <li>
-                        <a href="https://doity.com.br/admin">Painel</a>
-                    </li>
-                    <li class="break"></li>
-                    <li>
-                        <a href="https://doity.com.br/admin/eventos">Eventos</a>
-                    </li>
-                    <li class="break"></li>
-                    <li>
-                        <a href="https://doity.com.br/admin/users">Usuários</a>
-                        <ul class="sf-js-enabled">
-                            <li><a href="https://doity.com.br/admin/users">Usuários</a></li>
-                            <li><a href="https://doity.com.br/admin/roles">Perfis</a></li>
-                            <li><a href="https://doity.com.br/admin/acl/acl_permissions">Permissões</a></li>
-                        </ul>
-                    </li>
-                    <li class="break"></li>
-                    <li>
-                        <a href="https://doity.com.br/admin/compras">Transações</a>
-                    </li>
-                    <li class="break"></li>
-                    <li>
-                        <a href="https://doity.com.br/admin/painel">Dashboard</a>
-                    </li>
-                    <li class="break"></li>
-                    <li>
-                        <a target="_blank" href="https://doity.com.br/evento-teste-frontend">Hotsite</a>
-                    </li>
-                    <li class="break"></li>
-                </ul>
-            </div>
             <div class="holder-parent">
-                <div class="holder-left" id="sidebar-container">
-                    
+                <div class="holder-left" id="sidebar-container">     
                 </div>
                 <div class="holder">
-                    <div class="__headbar doity" style="width: screWidthpx" id="header-container">
+                    <div class="__headbar doity" id="header-container">
                         
                     </div>
                     <div class="__left __center-mobile">
@@ -158,21 +52,6 @@
                                 </svg>Pesquisa </p>
                             <span
                                 style="display: flex; flex-direction: column; justify-content: center; width: fit-content;">Pesquisa</span>
-                        </div>
-                        <div id="modal-help" class="contrato modal modal-large">
-
-                            <div class="modal-header" style="padding: 14px 15px;">
-                                <button class="close fechar" aria-hidden="true" id="ln_fechar_help" data-dismiss="modal"
-                                    type="button">×</button>
-                                <span><a href="" target="_blank" id="bt-abrir-na-central">Abrir na Central de Ajuda <i
-                                            class="fa fa-external-link"></i></a></span>
-                            </div>
-
-                            <div class="modal-body">
-                                <iframe frameborder="0" height="465px" width="470px" scrolling="yes"
-                                    allowfullscreen=""></iframe>
-                            </div>
-
                         </div>
 
                         <style type="text/css">
@@ -440,100 +319,7 @@
     </div>
 
 
-    <div id="modal-info-feedback-pos-evento" class="modal hide fade modal-medium" role="dialog"
-        aria-labelledby="modal-info-feedback-pos-eventoLabel" aria-hidden="true" style="top: 280px;">
-        <button type="button" id="btn-fechar-info-feedback-pos-evento" class="close feedback-pos-close"
-            aria-label="Close"><span aria-hidden="true">×</span></button>
-        <div class="modal-body modal-feed-back-pos-evento" style="font-size: 13px; min-height: 470px;">
-
-            <h1>Queremos a sua opinião!</h1>
-
-            <p>
-                Prezado(a) <b>Administrator</b>,
-            </p>
-
-            <p>
-                A Doity evoluiu todos esses anos sempre ouvindo o feedback dos nossos clientes
-                e não queremos parar por aqui!
-            </p>
-
-            <p>
-                Sabemos como é difícil e trabalhoso organizar eventos, e nossa missão é justamente facilitar esse
-                trabalho e te ajudar a focar no que é mais importante: a qualidade do seu evento!
-            </p>
-
-            <p>
-                E para fazer uma plataforma cada vez melhor, queremos a
-                sua ajuda respondendo um rápido questionário
-            </p>
-
-            <p id="strong-modal-feedback">Muito obrigado e até o próximo evento!</p>
-
-
-            <div>
-                <a href="https://forms.gle/N36a7xuTSTG9S8qXA" target="_blank"
-                    id="reponder-questionario-destruir-modal"><button id="btn-modal-feedback-pos-evento">Responder
-                        Questionario</button></a>
-
-                <a href="#" id="responder-mais-tarde-feedback-pos-modal">Responder Mais Tarde</a>
-            </div>
-
-
-        </div>
-
-    </div>
-
-    <style>
-        #modal-info-feedback-pos-evento {
-            border: none;
-            max-width: 500px;
-            min-height: 350px !important;
-            border-radius: 15px;
-            display: none;
-
-        }
-
-        .modal-feed-back-pos-evento {
-            min-height: 440px !important;
-            padding: 50px !important;
-            padding-right: 0px !important;
-        }
-
-        .modal-feed-back-pos-evento p {
-            margin-bottom: 18px;
-        }
-
-        .modal-feed-back-pos-evento #strong-modal-feedback {
-            font-weight: bold;
-        }
-
-        #btn-modal-feedback-pos-evento {
-            padding: 15px;
-            background-color: #ff2b34;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #btn-modal-feedback-pos-evento:hover {
-            background-color: #f73941;
-        }
-
-        .feedback-pos-close {
-            padding: 30px !important;
-            padding-top: 20px !important;
-            padding-left: 18px !important;
-            padding-right: 20px !important;
-            text-align: center;
-        }
-
-
-
-        #responder-mais-tarde-feedback-pos-modal {
-            margin-left: 80px;
-        }
-    </style>
+    
 
     <style>
         .noBreadcrumbPaddingTop {
