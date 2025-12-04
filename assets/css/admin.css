@@ -907,36 +907,9 @@ div.actions ul li {
 }
 
 div.actions ul li a {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EEEEEE));
-    background-image: -webkit-linear-gradient(top, #FFFFFF, #EEEEEE);
-    background-image: -o-linear-gradient(top, #FFFFFF, #EEEEEE);
-    background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);
-    background: -moz-linear-gradient(center top , #FFF, #EEE) repeat scroll 0 0 transparent;
-    background-image:-webkit-linear-gradient(top, #FFF, #EEE);
-    /* For Internet Explorer 5.5 - 7 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#EEEEEE)";
-    /* For Internet Explorer 8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#EEEEEE);
-    border: 1px solid #D3D3D3;
-    border-radius: 3px;
     float: left;
     font-weight: bold;
-    margin-right: 10px;
-    padding: 5px 8px;
     text-decoration: none;
-    color: #1C1C1C;
-}
-div.actions ul li a:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#4D90FE), to(#669EF9));
-    background-image: -o-linear-gradient(top, #4D90FE, #669EF9);
-    background-image: linear-gradient(to bottom, #4D90FE, #669EF9);
-    background-image:-webkit-linear-gradient(top, #4D90FE, #669EF9);
-    /* For Internet Explorer 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4D90FE, endColorstr=#669EF9);
-    /* For Internet Explorer 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4D90FE, endColorstr=#669EF9)";
-    border: 1px solid #3079ED;
-    color: #FFF;
 }
 
 div.actions ul .a-green {
@@ -1935,6 +1908,7 @@ tr.striped td {
 
 .table-header {
     border-bottom: 1px solid #AAA !important;
+    
 }
 
 .controller-row td {

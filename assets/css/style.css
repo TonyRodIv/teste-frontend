@@ -24,3 +24,13 @@
         align-items: center;
     }
 }
+
+/* buttons style */
+
+.button{
+    background-color: #F9FAFB;
+    border: 1px solid #CDD1D9;
+    color: #414651;
+    border-radius: 8px;
+    padding: 0.625rem 1.5625rem;
+}
