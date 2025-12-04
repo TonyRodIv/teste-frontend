@@ -12,6 +12,13 @@
 
 /* From legacy html */
 
+.footer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
 #footer {
     display: flex;
     justify-content: center;
@@ -28,9 +35,35 @@
 /* buttons style */
 
 .button{
+    border-radius: 0.8rem;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-gray{
     background-color: #F9FAFB;
     border: 1px solid #CDD1D9;
     color: #414651;
-    border-radius: 8px;
-    padding: 0.625rem 1.5625rem;
+}
+
+.button-red{
+    background-color: #FF2B34;
+    color: #fff;
+}
+
+.headPage{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    justify-items: end;
+}
+
+.holder{
+    gap: 1.2rem;
+}
+
+.holder .box.pesquisa_pergunta, .holder .headPage, .holder .footer{
+    margin: 0 auto;
+    max-width: 1366px;
 }
