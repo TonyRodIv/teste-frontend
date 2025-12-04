@@ -35,12 +35,12 @@
     <div id="wrapper">
         <div class="container" style="width: 100% !important">
             <div class="holder-parent">
-                <div class="holder-left" id="sidebar-container">     
-                </div>
+                <aside class="holder-left" id="sidebar-container">     
+                </aside>
                 <div class="holder">
-                    <div class="__headbar doity" id="header-container">
+                    <header class="__headbar doity" id="header-container">
                         
-                    </div>
+                    </header>
                     <div class="__left __center-mobile">
                         <div class="breadcrumb" style="padding: 0 35px;">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
@@ -54,76 +54,25 @@
                                 style="display: flex; flex-direction: column; justify-content: center; width: fit-content;">Pesquisa</span>
                         </div>
 
-                        <style type="text/css">
-                            #modal-help iframe {
-                                position: absolute;
-                                top: 47px;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                            }
-                        </style>
                     </div>
 
-                    <style>
-                        @media (max-width: 960px) {
-                            .migration-new {
-                                left: 0 !important;
-                                padding: 21px 20px !important;
-                            }
-                        }
-
-                        @media (max-width: 564px) {
-                            .content_wrapper {
-                                flex-direction: column;
-                            }
-                        }
-
-                        .migration-new {
-                            width: 100%;
-                            background: #D9D9D9;
-                            padding: 21px 91px;
-                            position: fixed;
-                            top: 0;
-                            left: 250px;
-                            z-index: 100;
-                        }
-
-                        .migration-new .content_wrapper {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            max-width: 1366px;
-                            margin: 0 auto;
-                        }
-                    </style>
-
-                    <div style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto;">
-
-
-                        <link rel="stylesheet" type="text/css" href="./assets/css/osx.css">
-
+                    <div>
                         <div class="box pesquisa_pergunta">
-
                             <div class="title">
                                 <h2>Pesquisa</h2>
-                                <img src="./assets/img/title-hide.gif" alt="">
                             </div>
-
                             <div class="content forms">
-
                                 <div class="mensagem">
                                 </div>
                                 <div class="actions">
                                     <ul>
-                                        <li><a href="https://doity.com.br/admin/pesquisas_perguntas/add/1402">Adicionar
+                                        <li><a href="./pages/adiciona-pergunta.html">Adicionar
                                                 pergunta</a></li>
                                         <li><a href="#" data-toggle="tooltip"
                                                 title="Pesquisa já foi enviada. Não é possível enviar a pesquisa novamente"
                                                 class="link_desabilitado">Enviar pesquisa de satisfação</a></li>
-                                        <li><a href="https://doity.com.br/admin/pesquisas_resultados/index/1402">Resultados
+                                        <li><a href="./pages/relatorio.html">Resultados
                                                 da pesquisa de satisfação</a></li>
-
                                     </ul>
                                 </div>
 
@@ -132,13 +81,12 @@
                                     <p>Data de disponibilidade: <strong>01/12/2025</strong></p>
                                     <p>Disponível: <strong>Sim</strong></p>
                                     <p>Enviar pesquisa para: <strong>Todos confirmados</strong></p>
-
                                     <p class="painel-p">
-                                        <a href="https://doity.com.br/admin/pesquisas/edit/1402">Editar informações</a>
+                                        <a href="./pages/editar-pesquisa.html">Editar informações</a>
                                     </p>
 
                                     <p class="painel-p">
-                                        <a href="https://doity.com.br/admin/pesquisas/preview/1402"
+                                        <a href="./pages/formulario-pesquisa.html"
                                             target="_blank">Pré-visualizar</a>
                                     </p>
                                 </div>
@@ -260,8 +208,6 @@
 
                         </div>
 
-
-                        <!-- MENSAGEM PERGUNTANDO SE DESEJA ENVIAR PARA E-MAIL PARA OS PARTICIPANTES INFORMANDO QUE O CERTIFICADO ESTÁ LIBERADO -->
                         <div id="container">
                             <div id="content">
                                 <div id="osx-modal-content">
@@ -298,34 +244,11 @@
                             <p></p>
                         </div>
 
-                        <style>
-                            #footer {
-                                display: flex;
-                                justify-content: center;
-                                gap: 3px;
-                            }
-
-                            @media (max-width: 768px) {
-                                #footer {
-                                    flex-direction: column;
-                                    align-items: center;
-                                }
-                            }
-                        </style>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    
-
-    <style>
-        .noBreadcrumbPaddingTop {
-            padding-top: 0 !important;
-        }
-    </style>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/components.js"></script>
