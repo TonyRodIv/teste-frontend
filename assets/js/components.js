@@ -782,7 +782,8 @@ $(document).ready(function () {
 
     </div><!-- .right.items-row -->
 </div>
-`
+`;
+
     $(document).on('click', '.__perfil', function (e) {
         e.stopPropagation();
         $(this).toggleClass('active');
@@ -796,17 +797,19 @@ $(document).ready(function () {
     $('#header-container').html(headerHTML);
 });
 
-document.getElementById('nav-toggle-cb').addEventListener('change', function() {
-    var sidebar = document.getElementById('sidebar-container'); 
+$('#nav-toggle-cb').on('change', function() {
+    var sidebar = $('#sidebar-container');
+    var icon = $('#toggle-nav-icon');
     
-    console.log('aaaa')
-    if (this.checked) {
-        console.log('aaaa')
-        sidebar.classList.add('active');
-        document.getElementById('toggle-nav-icon').classList.replace('fa-bars', 'fa-times');
+    console.log('aaaa');
+
+    if ($(this).is(':checked')) {
+        console.log('aaaa');
+        sidebar.addClass('active');
+        icon.removeClass('fa-bars').addClass('fa-times');
     } else {
-        sidebar.classList.remove('active');
-        document.getElementById('toggle-nav-icon').classList.replace('fa-times', 'fa-bars');
-        console.log('aaaa')
+        sidebar.removeClass('active');
+        icon.removeClass('fa-times').addClass('fa-bars');
+        console.log('aaaa');
     }
 });
