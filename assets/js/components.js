@@ -697,11 +697,10 @@ $(document).ready(function () {
                 fill="#FF2B34"></path>
         </svg></a>
     <div class="__left __top_menu-mobile">
-        <input type="checkbox" id="nav-toggle-cb" style="opacity:0;">
-
-        <label for="nav-toggle-cb" id="resp-menu" style="cursor: pointer;">
-            <i class="fa fa-bars" id="toggle-nav-icon"></i>
+        <label for="mobile-menu-toggle" id="resp-menu" style="cursor: pointer;">
+            <i class="fa fa-bars"></i>
         </label>
+
         <a class="__mobile-criar_novo"
             style="display: none; width: 28px; height: 28px; border-radius: 100px; background-color: #C2141C; filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15)); align-items: center; justify-content: center;"
             href="https://doity.com.br/admin/eventos/add">
@@ -782,7 +781,7 @@ $(document).ready(function () {
 
     </div><!-- .right.items-row -->
 </div>
-`;
+`
 
     $(document).on('click', '.__perfil', function (e) {
         e.stopPropagation();
@@ -795,21 +794,20 @@ $(document).ready(function () {
 
     $('#sidebar-container').html(menuHTML);
     $('#header-container').html(headerHTML);
-});
+    // $('#nav-toggle-cb').on('change', function () {
+    //     var sidebar = $('#sidebar-container');
+    //     var icon = $('#toggle-nav-icon');
 
-$('#nav-toggle-cb').on('change', function() {
-    var sidebar = $('#sidebar-container');
-    var icon = $('#toggle-nav-icon');
-    
-    console.log('aaaa');
+    //     console.log('aaaa');
 
-    if ($(this).is(':checked')) {
-        console.log('aaaa');
-        sidebar.addClass('active');
-        icon.removeClass('fa-bars').addClass('fa-times');
-    } else {
-        sidebar.removeClass('active');
-        icon.removeClass('fa-times').addClass('fa-bars');
-        console.log('aaaa');
-    }
+    //     if ($(this).is(':checked')) {
+    //         console.log('aaaa');
+    //         sidebar.addClass('active');
+    //         icon.removeClass('fa-bars').addClass('fa-times');
+    //     } else {
+    //         sidebar.removeClass('active');
+    //         icon.removeClass('fa-times').addClass('fa-bars');
+    //         console.log('aaaa');
+    //     }
+    // });
 });

@@ -25,144 +25,157 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="container">
-            <div class="holder-parent">
-                <aside class="holder-left" id="sidebar-container">
-                </aside>
-                <div class="holder">
-                    <header class="__headbar doity" id="header-container">
-                    </header>
-                    <div class="headPage">
-                        <div class="breadcrumb">
-                            <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
-                                    href="https://doity.com.br/admin/eventos/painel/279481">Painel</a><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
-                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>Pesquisa </p>
-                            <span>Pesquisa de Satisfação</span>
-                        </div>
-                        <div class="d-flex d_align-center"><a href="./pages/relatorio.html"
-                                class="button button-gray text-l btn-result">Resultados
-                                da pesquisa</a></div>
-                    </div>
-                    <div class="box pesquisa_pergunta">
-                        <div class="title">
-                            <h2>Pesquisa</h2>
-                        </div>
-                        <div class="mensagem">
-                        </div>
-                        <div class="content forms d-flex d_flex-column d_align-start d_gap-25">
-                            <div class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap">
-                                <div class="info-textos d-flex d_flex-column d_gap-25">
-                                    <p class="text-xl text-bold">Nome da Pesquisa</p>
-                                    <div class="survey-details d-flex d_gap-15 d_align-center">
-                                        <p class="text-md d_text-gray">Data: <strong
-                                                style="color: #181818;">01/12/2025</strong></p>
-                                        <hr style="align-self: stretch; min-height: 100%; background-color:#D3D3D3; ">
-                                        <p class="text-md d_text-gray">Enviar pesquisa para: <strong
-                                                style="color: #181818;">Só participantes credenciados</strong></p>
-                                        <hr style="align-self: stretch; min-height: 100%; background-color:#D3D3D3;">
-                                        <span class="text-md ready-signal"> <span></span>Disponível</span>
-                                    </div>
-                                </div>
-                                <div class="info-acoes d_display-flex d_gap-10">
-                                    <a href="./pages/editar-pesquisa.html" class="button button-md button-gray text-md">
-                                        Editar
-                                    </a>
-                                    <a href="./pages/formulario-pesquisa.html" target="_blank"
-                                        class="button button-md button-gray text-md">
-                                        Pré-visualizar
-                                    </a>
-                                </div>
-                            </div>
+    <input type="checkbox" id="mobile-menu-toggle" style="display: none;">
 
-                            <table class="table-resp d_table">
-                                <thead>
-                                    <tr class="table-header">
-                                        <th class="text-md">Perguntas <span>(1)</span></th>
-                                        <th class="text-md">Ações</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-th="text-md">Como você avaliaria sua experiência geral no evento?</td>
-                                        <td data-th="Ações" class="acoes">
-                                            <a href="./pages/editar-pergunta.html"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M4.75 19.2501L9 18.2501L18.2929 8.9572C18.6834 8.56667 18.6834 7.93351 18.2929 7.54298L16.4571 5.7072C16.0666 5.31667 15.4334 5.31667 15.0429 5.7072L5.75 15.0001L4.75 19.2501Z"
-                                                        stroke="#5A5A5A" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M19.25 19.25H13.75" stroke="#5A5A5A" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></a>
-                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M4.75 19.2501L9 18.2501L18.2929 8.9572C18.6834 8.56667 18.6834 7.93351 18.2929 7.54298L16.4571 5.7072C16.0666 5.31667 15.4334 5.31667 15.0429 5.7072L5.75 15.0001L4.75 19.2501Z"
-                                                        stroke="#5A5A5A" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M19.25 19.25H13.75" stroke="#5A5A5A" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <a href="./pages/adiciona-pergunta.html" class="button button-gray text-md text-l">Adicionar
-                                pergunta</a>
+    <div id="wrapper">
+        <div id="wrapper">
+            <div class="container">
+                <div class="holder-parent">
+                    <aside class="holder-left" id="sidebar-container">
+                    </aside>
+                    <div class="holder">
+                        <header class="__headbar doity" id="header-container">
+                        </header>
+                        <div class="headPage">
+                            <div class="breadcrumb">
+                                <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
+                                        href="https://doity.com.br/admin/eventos/painel/279481">Painel</a><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>Pesquisa </p>
+                                <span>Pesquisa de Satisfação</span>
+                            </div>
+                            <div class="d-flex d_align-center"><a href="./pages/relatorio.html"
+                                    class="button button-gray text-l btn-result">Resultados
+                                    da pesquisa</a></div>
                         </div>
-                    </div>
-                    <div class="d_width-100 d_display-flex d_justify-end send-survey">
-                        <a href="#" data-toggle="tooltip"
-                            title="Pesquisa já foi enviada. Não é possível enviar a pesquisa novamente"
-                            class="button button-red text-md text-l">Enviar pesquisa</a>
-                    </div>
-                    <div id="container" style="display: none;">
-                        <div id="content">
-                            <div id="osx-modal-content">
-                                <div id="osx-modal-title">Atenção:</div>
-                                <div id="osx-modal-data">
-                                    <p>Você só poderá enviar essa pesquisa uma única vez.<br>
-                                        Conforme você configurou, ela será enviada para todos os <b>confirmados</b>
-                                        no evento.
-                                    </p>
-                                    <div class="submit">
-                                        <a href="https://doity.com.br/admin/pesquisas/index/279481" id="apenas-liberar"
-                                            style="width: 70px; float: left; margin: 10px 10px;"
-                                            class="osx-acao-secundaria">Cancelar</a> <a
-                                            href="https://doity.com.br/admin/pesquisas/enviar/1402"
-                                            id="liberar-e-enviar" style="width: 110px; float: right; margin: 10px 10px;"
-                                            class="osx-acao-principal">Enviar pesquisa</a>
+                        <div class="box pesquisa_pergunta">
+                            <div class="title">
+                                <h2>Pesquisa</h2>
+                            </div>
+                            <div class="mensagem">
+                            </div>
+                            <div class="content forms d-flex d_flex-column d_align-start d_gap-25">
+                                <div
+                                    class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap">
+                                    <div class="info-textos d-flex d_flex-column d_gap-25">
+                                        <p class="text-xl text-bold">Nome da Pesquisa</p>
+                                        <div class="survey-details d-flex d_gap-15 d_align-center">
+                                            <p class="text-md d_text-gray">Data: <strong
+                                                    style="color: #181818;">01/12/2025</strong></p>
+                                            <hr
+                                                style="align-self: stretch; min-height: 100%; background-color:#D3D3D3; ">
+                                            <p class="text-md d_text-gray">Enviar pesquisa para: <strong
+                                                    style="color: #181818;">Só participantes credenciados</strong></p>
+                                            <hr
+                                                style="align-self: stretch; min-height: 100%; background-color:#D3D3D3;">
+                                            <span class="text-md ready-signal"> <span></span>Disponível</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-acoes d_display-flex d_gap-10">
+                                        <a href="./pages/editar-pesquisa.html"
+                                            class="button button-md button-gray text-md">
+                                            Editar
+                                        </a>
+                                        <a href="./pages/formulario-pesquisa.html" target="_blank"
+                                            class="button button-md button-gray text-md">
+                                            Pré-visualizar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="table-wrapper">
+                                    <table class="table-resp d_table">
+                                        <thead>
+                                            <tr class="table-header">
+                                                <th class="text-md">Perguntas <span>(1)</span></th>
+                                                <th class="text-md">Ações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-th="text-md">Como você avaliaria sua experiência geral no
+                                                    evento?</td>
+                                                <td data-th="Ações" class="acoes">
+                                                    <a href="./pages/editar-pergunta.html"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M4.75 19.2501L9 18.2501L18.2929 8.9572C18.6834 8.56667 18.6834 7.93351 18.2929 7.54298L16.4571 5.7072C16.0666 5.31667 15.4334 5.31667 15.0429 5.7072L5.75 15.0001L4.75 19.2501Z"
+                                                                stroke="#5A5A5A" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M19.25 19.25H13.75" stroke="#5A5A5A"
+                                                                stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                        </svg></a>
+                                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                            height="24" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M4.75 19.2501L9 18.2501L18.2929 8.9572C18.6834 8.56667 18.6834 7.93351 18.2929 7.54298L16.4571 5.7072C16.0666 5.31667 15.4334 5.31667 15.0429 5.7072L5.75 15.0001L4.75 19.2501Z"
+                                                                stroke="#5A5A5A" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M19.25 19.25H13.75" stroke="#5A5A5A"
+                                                                stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                        </svg></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <a href="./pages/adiciona-pergunta.html"
+                                    class="button button-gray text-md text-l">Adicionar
+                                    pergunta</a>
+                            </div>
+                        </div>
+                        <div class="d_width-100 d_display-flex d_justify-end send-survey">
+                            <a href="#" data-toggle="tooltip"
+                                title="Pesquisa já foi enviada. Não é possível enviar a pesquisa novamente"
+                                class="button button-red text-md text-l">Enviar pesquisa</a>
+                        </div>
+                        <div id="container" style="display: none;">
+                            <div id="content">
+                                <div id="osx-modal-content">
+                                    <div id="osx-modal-title">Atenção:</div>
+                                    <div id="osx-modal-data">
+                                        <p>Você só poderá enviar essa pesquisa uma única vez.<br>
+                                            Conforme você configurou, ela será enviada para todos os <b>confirmados</b>
+                                            no evento.
+                                        </p>
+                                        <div class="submit">
+                                            <a href="https://doity.com.br/admin/pesquisas/index/279481"
+                                                id="apenas-liberar" style="width: 70px; float: left; margin: 10px 10px;"
+                                                class="osx-acao-secundaria">Cancelar</a> <a
+                                                href="https://doity.com.br/admin/pesquisas/enviar/1402"
+                                                id="liberar-e-enviar"
+                                                style="width: 110px; float: right; margin: 10px 10px;"
+                                                class="osx-acao-principal">Enviar pesquisa</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="footer">
-                        <div id="footer">
-                            <p>
-                            </p>
-                            <p>Desenvolvido por <a href="http://doity.com.br/" target="_blank">Doity Plataforma de
-                                    Eventos</a></p>
-                            <p>- 2025 - Todos os direitos reservados
-                            </p>
-                            <p><a href="https://ajuda.doity.com.br/" target="_blank">Central de Ajuda</a>
-                                - <a href="#">Entre em Contato</a></p>
-                            <p></p>
+                        <div class="footer">
+                            <div id="footer">
+                                <p>
+                                </p>
+                                <p>Desenvolvido por <a href="http://doity.com.br/" target="_blank">Doity Plataforma de
+                                        Eventos</a></p>
+                                <p>- 2025 - Todos os direitos reservados
+                                </p>
+                                <p><a href="https://ajuda.doity.com.br/" target="_blank">Central de Ajuda</a>
+                                    - <a href="#">Entre em Contato</a></p>
+                                <p></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/components.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/components.js"></script>
 </body>
 
 </html>

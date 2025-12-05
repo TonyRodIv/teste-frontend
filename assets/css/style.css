@@ -116,4 +116,18 @@
     overflow: hidden;         
 }
 
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #EBEBEB;
+    border-radius: 15px;
+}
+
+.table-resp {
+    width: 100%;
+    min-width: 550px;
+    border: none;
+    border-radius: 0;
+}
 

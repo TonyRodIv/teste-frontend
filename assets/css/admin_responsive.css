@@ -29,6 +29,7 @@
 }
 
 @media (max-width: 960px) {
+    
     .modal_wrapper_shadow {
         z-index: 1000000;
     }
@@ -98,6 +99,7 @@
     }
     .__headbar {
         /* padding: 0 20px; */
+        width: 100dvw;
         height: 92px;
         display: flex;
         align-items: center;
@@ -112,8 +114,11 @@
         align-items: center;
         gap: 25%;
     }
+    .__info h3, .__info i{
+        display: none;
+    }
     .holder {
-        padding: 80px 20px 0 20px !important;
+        padding: 30px 20px 0 20px !important;
     }
 
     .holder-left.active {
@@ -127,6 +132,32 @@
         background-color: #fff;
         box-shadow: 2px 0 10px rgba(0,0,0,0.2);
         overflow-y: auto;
+    }
+
+
+    #mobile-menu-toggle:checked ~ #wrapper #sidebar-container {
+        display: block !important;
+    }
+
+    #mobile-menu-toggle:checked ~ #wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 9998;
+    }
+
+    #sidebar-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 9999;
+        overflow-y: auto;
+        background-color: #fff;
+        width: 250px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.2);
     }
 }
 
@@ -267,7 +298,7 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
-and (max-width : 420px) {
+and (max-width : 480px) {
     .filter-buttom-right .submit {
         clear: both;
     }
@@ -316,6 +347,27 @@ and (max-width : 420px) {
 
     .painel-artigos-left-item-acoes .painel-artigos-left-item-no-icon {display: none;}
     .painel-artigos-left-item-acoes .painel-artigos-left-item-info {padding: 0;}
+    .table-resp, 
+    .table-resp thead, 
+    .table-resp tbody, 
+    .table-resp th, 
+    .table-resp td, 
+    .table-resp tr {
+        display: revert !important;
+    }
+    
+    .table-resp thead {
+        display: table-header-group !important;
+    }
+    
+    .table-resp tr {
+        display: table-row !important;
+    }
+    
+    .table-resp td, .table-resp th {
+        display: table-cell !important;
+    }
+    
 }
 @media only screen
 and (max-width : 768px) {
