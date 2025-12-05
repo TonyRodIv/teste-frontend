@@ -56,6 +56,21 @@
     color: #fff;
 }
 
+.text-md{
+    font-size: 0.95rem;
+}
+.text-l{
+    font-size: 1rem;
+}
+.text-xl{
+    font-size: 1.3rem;
+}
+
+.text-bold{
+    font-weight: 600;
+}
+
+
 .headPage{
     width: 100%;
     display: grid;
@@ -75,11 +90,6 @@
 .info-textos div p{
     display: flex;
     flex-direction: column;
-}
-
-.title-section{
-    font-weight: 600;
-    font-size: 1.3rem;
 }
 
 .table-resp {
