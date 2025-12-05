@@ -386,7 +386,7 @@ img {
 .box .pages td, .box .pages th,
 .box .content td, .box .content th{
     border-bottom: 1px solid #DBDBDB;
-    padding: 8px 10px
+    padding: 18px 12px;
 }
 .box .content th{
     color: #4E443C;
@@ -1350,9 +1350,8 @@ select option {
 }
 
 table .acoes {
-    padding-top: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    display: flex;
+    justify-content: center;
 }
 
 .campo_personalizado-element {
@@ -1403,22 +1402,11 @@ table .ds-acoes a.ds-excluir-lote:hover {
 }
 
 table .acoes a {
-    padding-top: 4px !important;
+    padding-top: 4px ;
     padding: 3px 5px;
-    color: #1C1C1C !important;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EEEEEE));
-    background-image: -o-linear-gradient(top, #FFFFFF, #EEEEEE);
-    background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);
-    background: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-    background-image:-webkit-linear-gradient(top, #FFFFFF, #EEEEEE);
-    /* For Internet Explorer 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#EEEEEE);
-    /* For Internet Explorer 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#EEEEEE)";
-    border: 1px solid #D3D3D3;
-    border-radius: 3px 3px 3px 3px;
-    text-decoration: none !important;
-    font-size: 11px !important;
+    color: #1C1C1C ;
+    text-decoration: none ;
+    font-size: 11px ;
     margin: 0 1px;
 }
 
@@ -3280,11 +3268,11 @@ display: inline-block
 /* AREA DE SUBMISSOES */
 
 .painel-info-artigos {
-    border: 1px solid #EEE;
-    background-color: #FFF;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 20px 0;
+    /* border: 1px solid #EEE; */
+    background-color: #F6F6F6;
+    width: 100%;
+    border-radius: 0.8rem;
+    padding: 1.4rem;
     overflow: hidden;
     font-size: 16px;
     line-height: 1.4em;

@@ -3030,10 +3030,7 @@ span.error-marginegative {
     display: table-cell;
   }
   .table-resp th, .table-resp td {
-    padding: 0.8em 0.4em !important;
-  }
-  .table-resp th:first-child, .table-resp td:first-child {
-    padding-left: 0;
+    /* padding: 0.8em 0.4em; */
   }
   .table-resp th:last-child, .table-resp td:last-child {
     padding-right: 0;
@@ -4104,8 +4101,7 @@ th.acoes {
 
 table:not(.dataTable) {
     width: 100%;
-    border-collapse: collapse;
-    border-radius: 0.75rem;
+    /* border-collapse: collapse; */
     border: 1px solid #EBEBEB ;
 }
 

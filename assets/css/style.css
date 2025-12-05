@@ -35,10 +35,14 @@
 /* buttons style */
 
 .button{
-    border-radius: 0.8rem;
+    border-radius: 0.6rem;
     padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+}
+.button-md{
+    padding: 8px 26px;
 }
 
 .button-gray{
@@ -63,7 +67,25 @@
     gap: 1.2rem;
 }
 
-.holder .box.pesquisa_pergunta, .holder .headPage, .holder .footer{
+.holder .box.pesquisa_pergunta, .holder .headPage, .holder .footer,  .holder .send-survey{
     margin: 0 auto;
     max-width: 1366px;
+}
+
+.info-textos div p{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.table-resp {
+    border-collapse: separate;
+    border-spacing: 0;      
+    border-radius: 15px;       
+    border: 1px solid #EBEBEB; 
+    overflow: hidden;         
 }
