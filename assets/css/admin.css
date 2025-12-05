@@ -10,6 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    color: #181818;
 }
 img {
     border: 0 none;
@@ -390,7 +391,7 @@ img {
 }
 .box .content th{
     color: #4E443C;
-    font-size: 80%;
+    /* font-size: 80%; */
     font-weight: bold;
 }
 

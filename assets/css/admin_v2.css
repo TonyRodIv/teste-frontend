@@ -2884,7 +2884,6 @@ span.error-marginegative {
 .fake_input-label {
     color: #1E1E1E;
     font-family: Inter;
-    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     margin-bottom: 6px;
@@ -2986,7 +2985,7 @@ span.error-marginegative {
   display: none;
   font-weight: bold;
   text-align: left;
-  font-size: 12px!important;
+  /* font-size: 12px!important; */
   font-weight: bold !important;
   background-color: #EEEEEE;
 }

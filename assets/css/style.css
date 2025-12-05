@@ -70,6 +70,22 @@
     font-weight: 600;
 }
 
+.ready-signal{
+    color: #66BB33;
+    background-color: #E7FFE1;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+}
+.ready-signal span{
+    background-color: #66BB33;
+    border-radius: 100%;
+    width: 0.8rem;
+    height: 0.8rem;
+}
 
 .headPage{
     width: 100%;
@@ -99,3 +115,5 @@
     border: 1px solid #EBEBEB; 
     overflow: hidden;         
 }
+
+
