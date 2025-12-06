@@ -723,7 +723,7 @@ $(document).ready(function () {
             </a>
         </div>
 
-        <div class="__bell-icon" style="display: none;">
+        <div class="__bell-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                     d="M17.25 12V10C17.25 7.1005 14.8995 4.75 12 4.75C9.10051 4.75 6.75 7.10051 6.75 10V12L4.75 16.25H19.25L17.25 12Z"
@@ -731,7 +731,7 @@ $(document).ready(function () {
                 <path d="M9 16.75C9 16.75 9 19.25 12 19.25C15 19.25 15 16.75 15 16.75" stroke="black" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none"
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 7 7" fill="none"
                 style="position: absolute; top: 0; right: 0;">
                 <circle cx="3.5" cy="3.5" r="3.5" fill="#FF2B34"></circle>
             </svg>
@@ -777,9 +777,9 @@ $(document).ready(function () {
                     </li>
                 </ul>
             </nav>
-        </div><!-- .perfil -->
+        </div>
 
-    </div><!-- .right.items-row -->
+    </div>
 </div>
 `
 
