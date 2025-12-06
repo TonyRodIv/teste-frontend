@@ -161,6 +161,13 @@
 /* --------------------------------------------------------------
         ADMIN TRABALHOS - MODELO DE SUBMISSÕES
 --------------------------------------------------------------*/
+
+@media  only screen and (max-width:1285px){
+    .holder{
+        padding: 30px 50px 0 50px !important;
+    }
+}
+
 @media (min-width: 1049px) {
     #tmp-informacoes .tmp-width-15-percent { width: 15%; }
     #tmp-informacoes .tmp-width-20-percent { width: 20%; }
@@ -287,8 +294,33 @@
 }
 
 /* Smartphones (portrait and landscape) ----------- */
+
+@media  only screen and (max-width:390px){
+    .data-row{
+        flex-wrap: wrap;
+    }
+    .input-data{
+        /* flex-grow: 1; */
+        max-width: 100%;
+    }
+    .radio-row{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .row.buttons{
+        flex-direction: column;
+    }
+    .info-acoes{
+        flex-wrap: wrap;
+    }
+}
+
 @media only screen
 and (max-width : 480px) {
+    .painel-info-artigos{
+        padding: 1rem;
+    }
     .filter-buttom-right .submit {
         clear: both;
     }
@@ -365,7 +397,16 @@ and (max-width : 480px) {
     .button-md{
     padding: 14px 0;
 }
-
+.text-md{
+    font-size: 0.85rem;
+}
+.radio-row{
+    gap: 0;
+}
+.holder {
+        width: 100%;
+        padding: 30px 10px 0 10px !important;
+    }
     
 }
 

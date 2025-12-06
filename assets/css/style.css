@@ -81,7 +81,7 @@
 }
 
 .opcoes_enviar_para legend {
-    margin-bottom: 1px;
+    margin-bottom: 15px;
     font-weight: 500;
     margin-left: 1px;
 }
@@ -122,7 +122,27 @@
     color: #fff;
 }
 
-.cancel a {}
+.rating-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.rating-input:checked {
+    background-color: #FF2B34;
+    box-shadow: inset 0 0 0 3px #fff;
+    border-color: #ccc; 
+}
+
+.rating-input, input[type="radio"] {
+    flex-shrink: 0;
+}
 
 .text-md {
     font-size: 0.95rem;
@@ -145,7 +165,29 @@
 }
 
 .input-data {
-    width: 13rem;
+    width: 100% !important;
+    max-width: 13rem;
+}
+
+.forms .input input.input-data {
+    background-image: url('../img/calendar.png') !important;
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 16px;
+    padding-right: 35px; 
+}
+
+.forms .input input.input-data[type="date"] {
+    background-image: none !important;
+}
+
+.forms .input input.input-data::-webkit-calendar-picker-indicator {
+    background: url('../img/calendar.png') no-repeat center;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    opacity: 1; 
 }
 
 .ready-signal {

@@ -47,49 +47,72 @@
                                     <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg> </p>
-                            <span>Editar Pergunta</span>
+                            <span>Editar Pesquisa de Satisfação</span>
                         </div>
                     </div>
 
                     <div class="pesquisa box pesquisa_pergunta">
                         <form action="https://doity.com.br/admin/pesquisas/edit/1402" novalidate="novalidate"
                             id="PesquisaAdminEditForm" method="post" accept-charset="utf-8">
-                            <div class="content forms config_pesquisa d-flex d_flex-column d_gap-15">
+                            <div class="content forms config_pesquisa d-flex d_flex-column d_gap-35">
                                 <input type="hidden" name="data[Pesquisa][id]" value="1402" id="PesquisaId">
-                                <div class="input text required"><label for="PesquisaNome" class="text-md">Nome <span class="text-red">*</span></label><input name="data[Pesquisa][nome]"
-                                        value="Pesquisa de Qualidade do Evento" maxlength="255" type="text"
-                                        id="PesquisaNome" required="required" class="text-md"></div>
-                                <div class="input textarea"><label for="PesquisaDescricao">Descrição<span class="text-red">*</span></label><textarea name="data[Pesquisa][descricao]" class="ckeditor text-md"
-                                        cols="30" rows="6" id="PesquisaDescricao"></textarea></div>
-                                <div class="input text required">
-                                    <label for="PesquisaData">Período<span class="text-red">*</span></label>
-                                        <div class="d-flex d_gap-15">
-                                            <input name="data[Pesquisa][data_termino]" value="31/12/2025" type="date" id="PesquisaData" required="required" class="text-md input-data">
-                                            <input name="data[Pesquisa][data_disponivel]" value="01/12/2025" type="date" id="PesquisaData" required="required" class="text-md input-data">
-                                        </div>
+                                <div class=" d-flex d_flex-column d_gap-15">
+                                    <div class="input text required"><label for="PesquisaNome" class="text-md">Nome
+                                            <span class="text-red">*</span></label><input name="data[Pesquisa][nome]"
+                                            maxlength="255" type="text" id="PesquisaNome" required="required"
+                                            class="text-md"></div>
+                                    <div class="input textarea"><label for="PesquisaDescricao"
+                                            class="text-md">Descrição<span class="text-red">*</span></label><textarea
+                                            name="data[Pesquisa][descricao]" class="ckeditor text-md" cols="30" rows="6"
+                                            id="PesquisaDescricao"></textarea>
+                                    </div>
                                 </div>
-                                <div class="input checkbox"><input type="hidden" name="data[Pesquisa][ativo]"
+                                <div class="input text required">
+                                    <label for="PesquisaData" class="text-md">Período<span
+                                            class="text-red">*</span></label>
+                                    <div class="data-row d-flex d_gap-15">
+                                        <input name="data[Pesquisa][data_termino]" type="text"
+                                            placeholder="Data de início" id="PesquisaData" required="required"
+                                            class="text-md input-data" onfocus="(this.type='date')"
+                                            onblur="if(!this.value)this.type='text'">
+                                        <input name="data[Pesquisa][data_disponivel]" type="text"
+                                            placeholder="Data de término" id="PesquisaData" required="required"
+                                            class="text-md input-data" onfocus="(this.type='date')"
+                                            onblur="if(!this.value)this.type='text'">
+                                    </div>
+                                </div>
+                                <div class="input checkbox d-flex"><input type="hidden" name="data[Pesquisa][ativo]"
                                         id="PesquisaAtivo_" value="0"><input type="checkbox"
                                         name="data[Pesquisa][ativo]" checked="checked" value="1"
                                         id="PesquisaAtivo"><label for="PesquisaAtivo">Disponível</label></div>
                                 <div class="opcoes_enviar_para">
                                     <fieldset>
-                                        <legend>Enviar pesquisa para<span class="text-red">*</span></legend><input type="radio"
-                                            name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara1" value="1"
-                                            required="required"><label for="PesquisaEnviarPara1">Só
-                                            credenciados</label><input type="radio" name="data[Pesquisa][enviar_para]"
-                                            id="PesquisaEnviarPara0" value="0" checked="checked"
-                                            required="required"><label for="PesquisaEnviarPara0">Todos
-                                            confirmados</label>
+                                        <legend class="text-md">Enviar pesquisa para<span class="text-red">*</span>
+                                        </legend>
+                                        <div class="radio-row d-flex d_gap-15">
+                                            <div class="d-flex d_align-center">
+                                                <input type="radio" name="data[Pesquisa][enviar_para]"
+                                                    id="PesquisaEnviarPara0" value="0" checked="checked"
+                                                    required="required" class="rating-input">
+                                                <label for="PesquisaEnviarPara0" class="text-md">Todos
+                                                    confirmados</label>
+                                            </div>
+                                            <div class="d-flex d_align-center">
+                                                <input type="radio" name="data[Pesquisa][enviar_para]"
+                                                    id="PesquisaEnviarPara1" value="1" required="required"
+                                                    class="rating-input">
+                                                <label for="PesquisaEnviarPara1" class="text-md">Só credenciados</label>
+                                            </div>
+                                        </div>
                                     </fieldset>
                                 </div>
                             </div>
                         </form>
 
                         <div class="row buttons d-flex d_justify-between d_gap-15">
-                                <a class="button button-md-alt button-gray" href="../index.html" >Cancelar</a>
-                        
-                            <input class="button button-md-alt button-red text-md text-l" type="submit" value="Alterar">
+                            <a class="button button-md-alt button-gray" href="../index.html">Cancelar</a>
+
+                            <input class="button button-md-alt button-red text-md text-l" type="submit" value="Salvar">
                         </div>
                     </div>
 
