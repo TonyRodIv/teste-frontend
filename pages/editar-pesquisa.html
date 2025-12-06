@@ -9,186 +9,97 @@
         Pesquisas -
         Doity </title>
 
-
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/960.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/thickbox.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/doitystrap.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin_text.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/gray.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/datepicker.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/form.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/menu.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/messages.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/statics.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/tabs.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/wysiwyg.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/wysiwyg.modal.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/wysiwyg-editor.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.thumbs.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-tooltip.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.sidr.light.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/admin_v2.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/admin_responsive.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/messages.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/croppie.css">
 
-
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
     <link rel="apple-touch-icon"
         href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/favicon.png">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="noindex">
 
-
-
-    <!-- Google Tag Manager -->
-
-    <!-- End Google Tag Manager -->
-
 </head>
 
 <body>
 
+    <input type="checkbox" id="mobile-menu-toggle" style="display: none;">
     <div id="wrapper">
-        <div class="container" style="width: 100% !important">
-            <div class="menu">
-                <ul class="sf-js-enabled">
-                    <li>
-                        <a href="https://doity.com.br/admin">Painel</a>
-                    </li>
-
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/eventos">Eventos</a>
-                    </li>
-
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/users">Usuários</a>
-                        <ul class="sf-js-enabled">
-                            <li><a href="https://doity.com.br/admin/users">Usuários</a></li>
-                            <li><a href="https://doity.com.br/admin/roles">Perfis</a></li>
-                            <li><a href="https://doity.com.br/admin/acl/acl_permissions">Permissões</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/compras">Transações</a>
-                    </li>
-                    <li class="break"></li>
-
-                    <li>
-                        <a href="https://doity.com.br/admin/painel">Dashboard</a>
-                    </li>
-                    <li class="break"></li>
-
-
-
-                </ul>
-
-            </div>
+        <div class="container">
             <div class="holder-parent">
-                <div class="holder-left" id="sidebar-container">
-
-                </div>
+                <aside class="holder-left" id="sidebar-container">
+                </aside>
                 <div class="holder">
-                    <div class="__headbar doity" style="width: screWidthpx" id="header-container">
-                       
-                    </div>
-                    <div class="__left __center-mobile" style="display: none;">
-                        <div class="breadcrumb" style="padding: 0 35px;">
+                    <header class="__headbar doity" id="header-container">
+                    </header>
+                    <div class="headPage">
+                        <div class="breadcrumb">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
                                     href="https://doity.com.br/admin/eventos/painel/279481">Painel</a><svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                     fill="none">
                                     <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>Pesquisas </p>
-                            <span
-                                style="display: flex; flex-direction: column; justify-content: center; width: fit-content;">Pesquisas</span>
+                                </svg> </p>
+                            <span>Editar Pergunta</span>
                         </div>
-
-
-
-                        <div id="modal-help" class="contrato modal modal-large">
-
-                            <div class="modal-header" style="padding: 14px 15px;">
-                                <button class="close fechar" aria-hidden="true" id="ln_fechar_help" data-dismiss="modal"
-                                    type="button">×</button>
-                                <span><a href="" target="_blank" id="bt-abrir-na-central">Abrir em outra aba <i
-                                            class="fa fa-external-link"></i></a></span>
-                            </div>
-
-                            <div class="modal-body">
-                                <iframe frameborder="0" height="465px" width="470px" scrolling="yes"
-                                    allowfullscreen=""></iframe>
-                            </div>
-
-                        </div>
-
                     </div>
 
-                    <div style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto;">
+                    <div class="pesquisa box pesquisa_pergunta">
+                        <form action="https://doity.com.br/admin/pesquisas/edit/1402" novalidate="novalidate"
+                            id="PesquisaAdminEditForm" method="post" accept-charset="utf-8">
+                            <div style="display:none;"><input type="hidden" name="_method" value="POST"><input
+                                    type="hidden" name="data[_Token][key]"
+                                    value="5a3c5a841c78b87ced00f2e0907d6b7bc46e8c517c789f1a3da6aa99bd4510b9f9cc401175324900a79bf924f1bb6cfee418594526a781b44ce490a8483d8a34"
+                                    id="Token910137220"></div>
+                            <div class="title">
+                                <h2>Configurações da Pesquisa de Satisfação</h2>
+                            </div>
 
-                        <div class="pesquisa box">
+                            <div class="content forms config_pesquisa">
 
-                            <form action="https://doity.com.br/admin/pesquisas/edit/1402" novalidate="novalidate"
-                                id="PesquisaAdminEditForm" method="post" accept-charset="utf-8">
-                                <div style="display:none;"><input type="hidden" name="_method" value="POST"><input
-                                        type="hidden" name="data[_Token][key]"
-                                        value="5a3c5a841c78b87ced00f2e0907d6b7bc46e8c517c789f1a3da6aa99bd4510b9f9cc401175324900a79bf924f1bb6cfee418594526a781b44ce490a8483d8a34"
-                                        id="Token910137220"></div>
-                                <div class="title">
-                                    <h2>Configurações da Pesquisa de Satisfação</h2>
+                                <div class="mensagem">
                                 </div>
 
-                                <div class="content forms config_pesquisa">
-
-                                    <div class="mensagem">
-                                    </div>
-
-                                    <input type="hidden" name="data[Pesquisa][id]" value="1402" id="PesquisaId">
-                                    <div class="input text required"><label for="PesquisaNome">Nome da
-                                            pesquisa*</label><input name="data[Pesquisa][nome]"
-                                            value="Pesquisa de Qualidade do Evento" maxlength="255" type="text"
-                                            id="PesquisaNome" required="required"></div>
-                                    <div class="input textarea"><label for="PesquisaDescricao">Descrição da
-                                            pesquisa</label><textarea name="data[Pesquisa][descricao]" class="ckeditor"
-                                            cols="30" rows="6" id="PesquisaDescricao">&lt;p&gt;Queremos saber como foi a sua experi&amp;ecirc;ncia neste evento. Suas respostas nos ajudar&amp;atilde;o a melhorar continuamente a organiza&amp;ccedil;&amp;atilde;o, o conte&amp;uacute;do e a qualidade dos pr&amp;oacute;ximos encontros. Obrigado por dedicar alguns minutos para contribuir com seu feedback!&lt;/p&gt;
-</textarea></div>
-                                    <div class="input text required"><label for="PesquisaDataDisponivel">Data de início
-                                            da pesquisa*</label><input name="data[Pesquisa][data_disponivel]"
-                                            value="01/12/2025" type="text" id="PesquisaDataDisponivel"
-                                            required="required"></div>
-                                    <div class="input text required"><label for="PesquisaDataTermino">Data término da
-                                            pesquisa*</label><input name="data[Pesquisa][data_termino]"
-                                            value="31/12/2025" type="text" id="PesquisaDataTermino" required="required">
-                                    </div>
-                                    <div class="input checkbox"><input type="hidden" name="data[Pesquisa][ativo]"
-                                            id="PesquisaAtivo_" value="0"><input type="checkbox"
-                                            name="data[Pesquisa][ativo]" checked="checked" value="1"
-                                            id="PesquisaAtivo"><label for="PesquisaAtivo">Disponível</label></div>
-                                    <div class="opcoes_enviar_para">
-                                        <fieldset>
-                                            <legend>Enviar pesquisa para*</legend><input type="radio"
-                                                name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara1" value="1"
-                                                required="required"><label for="PesquisaEnviarPara1">Só
-                                                credenciados</label><input type="radio"
-                                                name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara0" value="0"
-                                                checked="checked" required="required"><label
-                                                for="PesquisaEnviarPara0">Todos confirmados</label>
-                                        </fieldset>
-                                    </div>
+                                <input type="hidden" name="data[Pesquisa][id]" value="1402" id="PesquisaId">
+                                <div class="input text required"><label for="PesquisaNome">Nome da
+                                        pesquisa*</label><input name="data[Pesquisa][nome]"
+                                        value="Pesquisa de Qualidade do Evento" maxlength="255" type="text"
+                                        id="PesquisaNome" required="required"></div>
+                                <div class="input textarea"><label for="PesquisaDescricao">Descrição da
+                                        pesquisa</label><textarea name="data[Pesquisa][descricao]" class="ckeditor"
+                                        cols="30" rows="6" id="PesquisaDescricao">&lt;p&gt;Queremos saber como foi a sua experi&amp;ecirc;ncia neste evento. Suas respostas nos ajudar&amp;atilde;o a melhorar continuamente a organiza&amp;ccedil;&amp;atilde;o, o conte&amp;uacute;do e a qualidade dos pr&amp;oacute;ximos encontros. Obrigado por dedicar alguns minutos para contribuir com seu feedback!&lt;/p&gt; </textarea></div>
+                                <div class="input text required"><label for="PesquisaDataDisponivel">Data de início
+                                        da pesquisa*</label><input name="data[Pesquisa][data_disponivel]"
+                                        value="01/12/2025" type="text" id="PesquisaDataDisponivel" required="required">
                                 </div>
-                            </form>
-                        </div>
+                                <div class="input text required"><label for="PesquisaDataTermino">Data término da
+                                        pesquisa*</label><input name="data[Pesquisa][data_termino]" value="31/12/2025"
+                                        type="text" id="PesquisaDataTermino" required="required">
+                                </div>
+                                <div class="input checkbox"><input type="hidden" name="data[Pesquisa][ativo]"
+                                        id="PesquisaAtivo_" value="0"><input type="checkbox"
+                                        name="data[Pesquisa][ativo]" checked="checked" value="1"
+                                        id="PesquisaAtivo"><label for="PesquisaAtivo">Disponível</label></div>
+                                <div class="opcoes_enviar_para">
+                                    <fieldset>
+                                        <legend>Enviar pesquisa para*</legend><input type="radio"
+                                            name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara1" value="1"
+                                            required="required"><label for="PesquisaEnviarPara1">Só
+                                            credenciados</label><input type="radio" name="data[Pesquisa][enviar_para]"
+                                            id="PesquisaEnviarPara0" value="0" checked="checked"
+                                            required="required"><label for="PesquisaEnviarPara0">Todos
+                                            confirmados</label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
 
                         <div class="clear"></div>
 
@@ -264,9 +175,9 @@
                             }
                         </style>
                     </div>
+
                     <div class="footer">
                         <div id="footer">
-
                             <p>
                             </p>
                             <p>Desenvolvido por <a href="http://doity.com.br/" target="_blank">Doity Plataforma de
@@ -276,32 +187,7 @@
                             <p><a href="https://ajuda.doity.com.br/" target="_blank">Central de Ajuda</a>
                                 - <a href="#">Entre em Contato</a></p>
                             <p></p>
-
-
-
-
-
-
-
-
                         </div>
-
-                        <style>
-                            #footer {
-                                display: flex;
-                                justify-content: center;
-                                gap: 3px;
-                            }
-
-                            @media (max-width: 768px) {
-                                #footer {
-                                    flex-direction: column;
-                                    align-items: center;
-                                }
-                            }
-
-
-                        </style>
                     </div>
                 </div>
             </div>
