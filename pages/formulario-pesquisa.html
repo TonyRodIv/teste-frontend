@@ -24,7 +24,7 @@
 
   <link rel="image_src" href="https://doity.com.br/media/doity/logo.png">
 
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
   <link rel="apple-touch-icon"
     href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/favicon.png">
 
@@ -33,7 +33,8 @@
 
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/avaliacao_artigo.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/avaliar-artigo.css">
 
   <style media="screen">
     .__alert {
@@ -188,9 +189,6 @@
             <span><b>Disponível até </b>31/12/2025</span>
           </div>
         </div>
-
-
-
         <!-- Formulário -->
 
         <h1 style="margin-top:50px;" id="texto-form">Pesquisa de Satisfação</h1>
@@ -207,6 +205,7 @@
               <span class="rating">
                 <input title="Excelente" type="radio" class="rating-input" value="5" id="Pergunta11638Nota1"
                   name="data[pergunta][11638][nota]">
+                  
                 <label data-toggle="tooltip" data-placement="bottom" title="Excelente" for="Pergunta11638Nota1"
                   class="rating-star">Excelente</label>
 
@@ -392,7 +391,7 @@
           <div class="texarea"><label for="PesquisaAvaliacaoComentario">Comentário (obrigatório)</label><textarea
               name="data[PesquisaAvaliacao][comentario]" rows="3" class="form-control" required="required" cols="30"
               id="PesquisaAvaliacaoComentario"></textarea></div> <br>
-          <button class="__button-avaliar" type="submit">Enviar</button>
+          <button class="button button-md button-red" type="submit">Enviar</button>
           <div style="display:none;"><input type="hidden" name="data[_Token][fields]"
               value="9147b88897edd3b6542ca4589e5555f9a3c0f8da%3A" id="TokenFields1616892081"><input type="hidden"
               name="data[_Token][unlocked]" value="" id="TokenUnlocked826685311"></div>
