@@ -2093,7 +2093,7 @@ label.crop-label input {
     margin-right: 3px;
 }
 
-.forms .submit input[type="submit"], .pages .submit input[type="submit"], input[type="submit"] {
+/* .forms .submit input[type="submit"], .pages .submit input[type="submit"], input[type="submit"] {
     background: #3498db;
     border: none;
     border-radius: 1px;
@@ -2105,7 +2105,7 @@ label.crop-label input {
     line-height: 27px;
     padding: 0 8px;
     text-align: center;
-}
+} */
 
 #painel-evento-admin .box .title {
     display: block;
