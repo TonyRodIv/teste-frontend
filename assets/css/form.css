@@ -42,7 +42,7 @@
 .forms .input{
 	display : inline-block;
 	border-top : 1px solid #dbdbdb;
-	padding : 10px 0;
+	/* padding : 10px 0; */
 	width : 100%;
 }
 
@@ -70,10 +70,10 @@
 }
 
 .forms .input  label, .radio legend{
-	display : block;
+	display : flex;
 	padding : 0 0 5px;
 	color: #1E1E1E;
-	font-size: 12px;
+	/* font-size: 12px; */
 	font-weight: 500;
 }
 
@@ -103,9 +103,9 @@
 }
 
 .forms .input.text span {
-	float : left;
+	/* float : left; */
 	display : block;
-	margin : 0 20px 0 4px;
+	/* margin : 0 20px 0 4px; */
 	line-height : 20px;
 }
 
@@ -130,7 +130,7 @@
 	margin : 0;
 	color : #1c1c1c;
 	line-height : 1.4em;
-	width : 646px;
+	/* width : 646px; */
 	height : 18px;
 }
 
@@ -354,7 +354,6 @@ input.x-small {
 
 .forms .input textarea {
 	float : left;
-	background-image : url("input-back.gif");
 	background-repeat : repeat-x;
 	background-color : transparent;
 	border : 1px solid #D9D9D9;
@@ -366,12 +365,10 @@ input.x-small {
 	outline: none;
 	padding : 5px;
 	margin : 0;
-	font-size : 12px;
 	font-family : Arial;
 	color : #1c1c1c;
 	line-height : 12px;
-	width : 646px;
-	height : 80px;
+	height : 128px;
 }
 
 .box .tabs .input textarea {

@@ -66,17 +66,6 @@
         display: none;
     }
 
-    .survey-details{
-        flex-direction: column;
-        align-items: start;
-        width: 100%;
-        gap: 5px;
-    }
-
-    .survey-details hr{
-        min-width: 100%;
-    }
-
     .info-textos{
         min-width: 100%;
     }
@@ -114,9 +103,7 @@
         align-items: center;
         gap: 25%;
     }
-    .__info h3, .__info i{
-        display: none;
-    }
+    
     .holder {
         padding: 30px 20px 0 20px !important;
     }
@@ -165,6 +152,9 @@
     #modalCredenciamento .modal-custom, #modalCredenciamentoMenu .modal-custom, #modalAutocredenciamento .modal-custom {
         margin: -250px 0 0 0 !important;
         left: 0%;
+    }
+    .__info h3, .__info i{
+        display: none;
     }
 }
 
@@ -367,7 +357,29 @@ and (max-width : 480px) {
     .table-resp td, .table-resp th {
         display: table-cell !important;
     }
+
+    .button{
+        width: 100%;
+        text-align: center;
+    }
+    .button-md{
+    padding: 14px 0;
+}
+
     
+}
+
+@media  only screen and (max-width:640px) {
+    .survey-details{
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .survey-details hr{
+        min-width: 100%;
+    }
 }
 @media only screen
 and (max-width : 768px) {

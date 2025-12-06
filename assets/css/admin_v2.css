@@ -2508,10 +2508,13 @@ div.actions ul li a:hover {
     background-color: #FFF;
     height: 40px;
     padding: 5px 10px;
-    font-size: 12px;
-    width: 100% !important;
+    /* font-size: 12px; */
+    /* width: 100%; */
     border-radius: 8px !important;
     font-family: Inter !important;
+}
+#PesquisaNome{
+    width: 100%;
 }
 .forms .input input[type=text]:focus:not(.withError),  .forms .input select:focus, .forms .input input:focus, .forms .input select:focus,
 .pages .input input[type=text]:focus:not(.withError), .pages .input select:focus,  .fake_input:focus-within, .chosen-single:focus-within{
@@ -2621,7 +2624,7 @@ div.actions {
 }
 
 .buttons {
-    border-top: 2px solid #CCC;
+    border-top: 1.5px solid #CCC;
     margin-top: 20px;
 }
 
