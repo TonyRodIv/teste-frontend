@@ -4104,7 +4104,7 @@ th.acoes {
 table:not(.dataTable) {
     width: 100%;
     /* border-collapse: collapse; */
-    border: 1px solid #EBEBEB ;
+    border: 1px solid #DBDBDB ;
 }
 
 .__tabela-padrao .td.acoes {

@@ -139,6 +139,3 @@ let data_survey = {
         }
     }
 };
-
-
-

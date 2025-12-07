@@ -1411,46 +1411,14 @@ table .acoes a {
     margin: 0 1px;
 }
 
-table .acoes a.red:hover, .ativo .green, .pago .green{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#E5526F), to(#D60A33));
-    background-image: -o-linear-gradient(top, #E5526F, #D60A33);
-    background-image: linear-gradient(to bottom, #E5526F, #D60A33);
-    background: -moz-linear-gradient(center top , #E5526F, #D60A33) repeat scroll 0 0 transparent;
-    background-image:-webkit-linear-gradient(top, #E5526F, #D60A33);
-    /* For Internet Explorer 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5526F, endColorstr=#D60A33);
-    /* For Internet Explorer 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5526F, endColorstr=#D60A33)";
-    border: 1px solid #6B0707;
-    color: #FFF !important;
+
+#tabela-perguntas td {
+    border-bottom: 1px solid #ccc;
+    
 }
 
-table .acoes a.green:hover, .ativo .red, .pago .red{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#40CEA6), to(#119B74));
-    background-image: -o-linear-gradient(top, #40CEA6, #119B74);
-    background-image: linear-gradient(to bottom, #40CEA6, #119B74);
-    background: -moz-linear-gradient(center top , #40CEA6, #119B74) repeat scroll 0 0 transparent;
-    background-image:-webkit-linear-gradient(top, #40CEA6, #119B74);
-    /* For Internet Explorer 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40CEA6, endColorstr=#119B74);
-    /* For Internet Explorer 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#40CEA6, endColorstr=#119B74)";
-    border: 1px solid #063F0A;
-    color: #FFF !important;
-}
-
-table .acoes a.blue:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#5CA2F2), to(#1D5493));
-    background-image: -o-linear-gradient(top, #5CA2F2, #1D5493);
-    background-image: linear-gradient(to bottom, #5CA2F2, #1D5493);
-    background: -moz-linear-gradient(center top , #5CA2F2, #1D5493) repeat scroll 0 0 transparent;
-    background-image:-webkit-linear-gradient(top, #5CA2F2, #1D5493);
-    /* For Internet Explorer 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5CA2F2, endColorstr=#1D5493);
-    /* For Internet Explorer 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5CA2F2, endColorstr=#1D5493)";
-    border: 1px solid #181470;
-    color: #FFF !important;
+#tabela-perguntas tr:last-child td {
+    border-bottom: none;
 }
 
 .acao-move-up, .acao-move-down {
