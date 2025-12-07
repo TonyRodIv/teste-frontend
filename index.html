@@ -56,7 +56,8 @@
                         <div class="mensagem">
                         </div>
                         <div class="content forms d-flex d_flex-column d_align-start d_gap-25">
-                            <div class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap d_gap-15">
+                            <div
+                                class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap d_gap-15">
                                 <div class="info-textos d-flex d_flex-column d_gap-25">
                                     <p class="text-xl text-bold">Nome da Pesquisa</p>
                                     <div class="survey-details d-flex d_gap-15 d_align-center">
@@ -111,7 +112,8 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a id="btn-add-wrapper"onclick="toggleFormulario()" class="button button-gray text-md text-l">Adicionar
+                            <a id="btn-add-wrapper" onclick="toggleFormulario()"
+                                class="button button-gray text-md text-l">Adicionar
                                 pergunta</a>
 
                             <div id="container-nova-pergunta" style="display: none;">
@@ -120,7 +122,7 @@
                                 </div>
 
                                 <div class="content forms d-flex d_flex-column d_gap-15">
-                                    <input type="hidden" id="input-edit-id"> 
+                                    <input type="hidden" id="input-edit-id">
                                     <div class="input text">
                                         <label class="text-md">Pergunta <span class="text-red">*</span></label>
                                         <input id="input-nova-pergunta" type="text" class="text-md w-100">
@@ -144,26 +146,41 @@
                         </div>
                     </div>
                     <div class="d_width-100 d_display-flex d_justify-end send-survey">
-                        <a href="#" data-toggle="tooltip"
-                            title="Pesquisa já foi enviada. Não é possível enviar a pesquisa novamente"
-                            class="button button-red text-md text-l">Enviar pesquisa</a>
+                        <button id="btn-pesquisa" class="button button-red text-md text-l" data-toggle="tooltip"
+                            title="">
+                            Enviar pesquisa
+                        </button>
                     </div>
-                    <div id="container" style="display: none;">
+                    <div id="container" class="modal-overlay">
                         <div id="content">
                             <div id="osx-modal-content">
-                                <div id="osx-modal-title">Atenção:</div>
+                                <div class="icon-container">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.29 3.86L1.82 18C1.64556 18.3024 1.55293 18.6453 1.55201 18.9945C1.55108 19.3437 1.64189 19.6871 1.81442 19.9894C1.98695 20.2917 2.23483 20.5417 2.53211 20.7131C2.82939 20.8845 3.16524 20.971 3.505 20.97H20.495C20.8348 20.971 21.1706 20.8845 21.4679 20.7131C21.7652 20.5417 22.0131 20.2917 22.1856 19.9894C22.3581 19.6871 22.4489 19.3437 22.448 18.9945C22.4471 18.6453 22.3544 18.3024 22.18 18L13.71 3.86C13.5317 3.56613 13.2807 3.32314 12.9812 3.15451C12.6817 2.98587 12.3437 2.89722 12 2.89722C11.6563 2.89722 11.3183 2.98587 11.0188 3.15451C10.7193 3.32314 10.4683 3.56613 10.29 3.86V3.86Z"
+                                            fill="#FFC107" stroke="#FFC107" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 9V13" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 17H12.01" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <div id="osx-modal-title">Atenção: Você só poderá enviar essa pesquisa uma vez.</div>
+
                                 <div id="osx-modal-data">
-                                    <p>Você só poderá enviar essa pesquisa uma única vez.<br>
-                                        Conforme você configurou, ela será enviada para todos os <b>confirmados</b>
-                                        no evento.
+                                    <p>Conforme você configurou, ela será enviada para todos os confirmados no evento.
                                     </p>
-                                    <div class="submit">
-                                        <a href="https://doity.com.br/admin/pesquisas/index/279481" id="apenas-liberar"
-                                            style="width: 70px; float: left; margin: 10px 10px;"
-                                            class="osx-acao-secundaria">Cancelar</a> <a
-                                            href="https://doity.com.br/admin/pesquisas/enviar/1402"
-                                            id="liberar-e-enviar" style="width: 110px; float: right; margin: 10px 10px;"
-                                            class="osx-acao-principal">Enviar pesquisa</a>
+
+                                    <div class="submit info-acoes d_display-flex d_gap-10">
+                                        <a href="#" id="apenas-liberar"
+                                            class="osx-acao-secundaria button button-md button-gray text-md"
+                                            onclick="hideModal()">Cancelar</a>
+                                        <a href="#" id="liberar-e-enviar"
+                                            class="osx-acao-principal button button-md button-red text-md"
+                                            onclick="blockButton()">Enviar pesquisa</a>
                                     </div>
                                 </div>
                             </div>

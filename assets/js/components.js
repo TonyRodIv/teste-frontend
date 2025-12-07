@@ -797,7 +797,29 @@ $(document).ready(function () {
 });
 
 
+function hideModal(){
+   $("#container").hide();
+}
+function showModal(){
+   $("#container").css("display", "flex");
+}
 
+function blockButton() {
+    hideModal()
+    $('#btn-pesquisa')
+        .addClass('btn-bloqueado')
+        .attr('title', 'Pesquisa já foi enviada. Não é possível enviar novamente')
+        .tooltip('enable');
+}
+
+$('#btn-pesquisa').click(function(e) {
+        if ($(this).hasClass('btn-bloqueado')) {
+            e.preventDefault();
+            return false;
+        } else {
+            $("#container").css("display", "flex");
+        }
+    });
 
 function toggleFormulario() {
     var $container = $("#container-nova-pergunta");

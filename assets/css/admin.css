@@ -3160,9 +3160,9 @@ display: inline-block
     background-image: url("404.html") !important;
     background-position: 14px 14px;
     background-repeat: no-repeat;
-    height: 14px;
-    line-height: 14px;
-    width: 14px;
+    /* height: 14px; */
+    /* line-height: 14px; */
+    /* width: 14px; */
     padding: 5px !important;
 }
 
@@ -3354,7 +3354,7 @@ a.lixeira:link, a.lixeira:active, a.lixeira:visited {
 
 .comentarios-pesquisa table td{
 	padding: 20px 10px !important;
-	font-size: 13px;
+	/* font-size: 13px; */
 }
 
 #resp-menu {

@@ -255,11 +255,11 @@
     }
 
     .modal_wrapper_shadow {
-        z-index: 1000000;
+        z-index: 1000;
     }
 
     .modal-custom {
-        z-index: 1000000;
+        z-index: 1000;
     }
 
     .modal-custom {
@@ -325,7 +325,7 @@
         display: flex;
         align-items: center;
         left: 0;
-        z-index: 1000000;
+        z-index: 1000;
         padding: 15px !important;
     }
 
@@ -348,7 +348,7 @@
         left: 0;
         width: 250px;
         height: 100vh;
-        z-index: 10001;
+        z-index: 1001;
         background-color: #fff;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
         overflow-y: auto;
