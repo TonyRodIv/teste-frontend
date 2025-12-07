@@ -41,12 +41,12 @@
                     <div class="headPage">
                         <div class="breadcrumb">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
-                                    href="https://doity.com.br/admin/eventos/painel/279481">Painel</a><svg
+                                    href="..//index.html">Painel</a><svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                     fill="none">
                                     <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg> </p>
+                                </svg> Pesquisa de Satisfação</p>
                             <span>Editar Pergunta</span>
                         </div>
                     </div>
@@ -59,36 +59,60 @@
                                 </div>
 
                                 <div class="content forms">
-                                    <form action="../index.html"
-                                        novalidate="novalidate" id="PesquisaAdminEditForm" method="post"
-                                        accept-charset="utf-8">
-                                        <div style="display:none;"><input type="hidden" name="_method"
-                                                value="POST"><input type="hidden" name="data[_Token][key]"
+                                    <form action="../index.html" novalidate="novalidate" id="PesquisaAdminEditForm"
+                                        method="post" accept-charset="utf-8">
+
+                                        <div style="display:none;">
+                                            <input type="hidden" name="_method" value="POST">
+                                            <input type="hidden" name="data[_Token][key]"
                                                 value="2ba977e6702c1b47173224dc71f31cd6368a10499c9dd7ce0281c6d2351d695d1145c4faaaa1d9950ad56b0dbffa69e0473c1c01517cfbee718381c14de5e8ae"
-                                                id="Token815523484"></div> <input type="hidden"
-                                            name="data[PesquisaPergunta][id]" value="11638" id="PesquisaPerguntaId">
-                                        <div class="input text"><label for="">Pergunta*</label><input
-                                                name="data[PesquisaPergunta][descricao]" id="" class="perguntas"
-                                                value="Como você avaliaria sua experiência geral no evento?"
-                                                maxlength="255" type="text">
+                                                id="Token815523484">
                                         </div>
-                                        <div class="input checkbox"><input type="hidden"
-                                                name="data[PesquisaPergunta][obrigatorio]"
-                                                id="PesquisaPerguntaObrigatorio_" value="0"><input type="checkbox"
-                                                name="data[PesquisaPergunta][obrigatorio]" value="1"
-                                                id="PesquisaPerguntaObrigatorio"><label
-                                                for="PesquisaPerguntaObrigatorio">Obrigatório</label></div>
-                                        <div class="row buttons">
-                                            <div class="submit"><input class="button button-md button-red text-md text-l" type="submit" value="Alterar"></div>
-                                            <div style="display:none;"><input type="hidden" name="data[_Token][fields]"
+
+                                        <input type="hidden" name="data[PesquisaPergunta][id]" value="11638"
+                                            id="PesquisaPerguntaId">
+
+                                        <div class="content forms d-flex d_flex-column d_gap-15">
+
+                                            <div class="input text">
+                                                <label for="" class="text-md">Pergunta <span
+                                                        class="text-red">*</span></label>
+                                                <input name="data[PesquisaPergunta][descricao]" id=""
+                                                    class="perguntas text-md"
+                                                    value="Como você avaliaria sua experiência geral no evento?"
+                                                    maxlength="255" type="text"
+                                                    style="width: 100%; box-sizing: border-box;">
+                                            </div>
+
+                                            <div class="input checkbox d-flex d_align-center">
+                                                <input type="hidden" name="data[PesquisaPergunta][obrigatorio]"
+                                                    id="PesquisaPerguntaObrigatorio_" value="0">
+
+                                                <input type="checkbox" name="data[PesquisaPergunta][obrigatorio]"
+                                                    value="1" id="PesquisaPerguntaObrigatorio">
+
+                                                <label for="PesquisaPerguntaObrigatorio"
+                                                    ">Obrigatório</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row buttons d-flex d_justify-between d_gap-15">
+                                            <a class="button button-md-alt button-gray text-md text-l"
+                                                href="../index.html">Cancelar</a>
+
+                                            <input class="button button-md-alt button-red text-md text-l" type="submit"
+                                                value="Alterar">
+
+                                            <div style="display:none;">
+                                                <input type="hidden" name="data[_Token][fields]"
                                                     value="2d012787cbb3931a33b59151f6717abaf8c0f53f%3APesquisaPergunta.id"
-                                                    id="TokenFields14594041"><input type="hidden"
-                                                    name="data[_Token][unlocked]" value="" id="TokenUnlocked1254747107">
-                                            </div>
-                                            <div class="cancel">
-                                                <a class="button button-md button-gray text-md text-l" href="../index.html">Cancelar</a>
+                                                    id="TokenFields14594041">
+                                                <input type="hidden" name="data[_Token][unlocked]" value=""
+                                                    id="TokenUnlocked1254747107">
                                             </div>
                                         </div>
+
                                     </form>
 
                                 </div>

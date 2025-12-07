@@ -73,7 +73,7 @@
     .info-acoes{
         width: 100%;
     }
-    .info-acoes .button{
+    .info-acoes a{
         width: 100%;
         text-align: center;
         padding: 10px 26px;

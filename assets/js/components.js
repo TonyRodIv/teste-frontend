@@ -794,20 +794,60 @@ $(document).ready(function () {
 
     $('#sidebar-container').html(menuHTML);
     $('#header-container').html(headerHTML);
-    // $('#nav-toggle-cb').on('change', function () {
-    //     var sidebar = $('#sidebar-container');
-    //     var icon = $('#toggle-nav-icon');
-
-    //     console.log('aaaa');
-
-    //     if ($(this).is(':checked')) {
-    //         console.log('aaaa');
-    //         sidebar.addClass('active');
-    //         icon.removeClass('fa-bars').addClass('fa-times');
-    //     } else {
-    //         sidebar.removeClass('active');
-    //         icon.removeClass('fa-times').addClass('fa-bars');
-    //         console.log('aaaa');
-    //     }
-    // });
 });
+
+
+function toggleFormulario() {
+    var $container = $("#container-nova-pergunta");
+    
+    if ($container.is(":hidden")) {
+        $container.show(); 
+        $("#input-nova-pergunta").focus(); 
+    } else {
+        $container.hide(); 
+        limparFormulario();
+    }
+}
+
+function adicionarNaTabela() {
+    var textoPergunta = $("#input-nova-pergunta").val();
+    var isObrigatorio = $("#check-obrigatorio").is(":checked");
+    var $tabela = $("#tabela-perguntas");
+
+    if ($.trim(textoPergunta) === "") {
+        alert("Por favor, digite uma pergunta.");
+        return;
+    }
+
+    var idTest = Math.floor(Math.random() * 10000); 
+
+    var novaLinha = `
+        <tr data-id="${idTest}" >
+                                            <td data-th="text-md">${textoPergunta} ${isObrigatorio ? '<span style="color:red; font-weight:bold;">*</span>' : ''}</td>
+                                            <td data-th="Ações" class="d-flex d_align-center d_gap-05">
+                                                <a href="./pages/editar-pergunta.html"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none">
+                                                        <path
+                                                            d="M4.75 19.2501L9 18.2501L18.2929 8.9572C18.6834 8.56667 18.6834 7.93351 18.2929 7.54298L16.4571 5.7072C16.0666 5.31667 15.4334 5.31667 15.0429 5.7072L5.75 15.0001L4.75 19.2501Z"
+                                                            stroke="#5A5A5A" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M19.25 19.25H13.75" stroke="#5A5A5A" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg></a>
+                                                <a href="#"><img src="./assets/img/trash.svg" width="20px" alt=""
+                                                        srcset=""></a>
+                                            </td>
+                                        </tr>
+    `;
+
+    $tabela.append(novaLinha);
+    
+    toggleFormulario();
+    limparFormulario();
+}
+
+function limparFormulario() {
+    $("#input-nova-pergunta").val("");
+    $("#check-obrigatorio").prop("checked", false);
+}
