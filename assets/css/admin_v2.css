@@ -2620,7 +2620,7 @@ div.actions ul li a:hover {
 
 div.actions {
     margin-top: 0;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 .buttons {
@@ -3032,7 +3032,7 @@ span.error-marginegative {
     display: table-cell;
   }
   .table-resp th, .table-resp td {
-    /* padding: 0.8em 0.4em; */
+    padding: 0.8em 0.4em;
   }
   .table-resp th:last-child, .table-resp td:last-child {
     padding-right: 0;
@@ -3437,9 +3437,9 @@ Add a counter to the multi-steps indicator
 
 .ds-btn-bordered {
   border: 1px solid white;
-  border-radius: 30px;
+  border-radius: 0.5rem;
   display: inline-block;
-  padding: 8px 30px;
+  padding: 15px 30px;
   color: #fff;
   text-decoration: none;
   text-align: center;

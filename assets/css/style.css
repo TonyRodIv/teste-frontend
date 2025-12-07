@@ -266,3 +266,60 @@ input[type="radio"] {
     border: none;
     border-radius: 0;
 }
+
+.comentarios-container {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-top: 1rem; 
+    overflow-x: auto;
+}
+
+.comentarios-tabela {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.comentarios-header-row {
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #e5e7eb; 
+}
+
+.comentarios-tabela th {
+    text-align: left;
+    padding: 1rem 1rem; 
+    font-weight: 600; 
+    color: #4b5563; 
+}
+
+.comentarios-th-comentario {
+    width: 66.666667%;
+}
+
+.comentarios-th-participante {
+    width: 33.333333%;
+}
+
+
+.comentarios-row {
+    border-bottom: 1px solid #e5e7eb; 
+    transition: background-color 0.15s ease-in-out; 
+}
+
+.comentarios-row:hover {
+    background-color: #f9fafb; 
+}
+
+.comentarios-last-row {
+    border-bottom: none;
+}
+
+.comentarios-tabela td {
+    padding: 1rem 1.5rem;
+    vertical-align: top; 
+    color: #1f2937; 
+}
+
+.comentarios-td-participante {
+    color: #4b5563; 
+}

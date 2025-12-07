@@ -29,6 +29,7 @@
 </head>
 
 <body>
+    <input type="checkbox" id="mobile-menu-toggle" style="display: none;">
     <div id="wrapper">
         <div class="container" style="width: 100% !important">
             <div class="menu">
@@ -101,8 +102,7 @@
                                     <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>Resultado da pesquisa de satisfação </p>
-                            <span
-                                style="display: flex; flex-direction: column; justify-content: center; width: fit-content;">Resultado
+                            <span class="d-flex d_flex-column d_justify-center" style=" width: fit-content;">Resultado
                                 da pesquisa de satisfação</span>
                         </div>
                     </div>
@@ -113,7 +113,8 @@
                         </div>
 
                         <div class="content forms d-flex d_flex-column d_gap-35">
-                            <div class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap d_gap-15">
+                            <div
+                                class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap d_gap-15">
                                 <div class="info-textos d-flex d_flex-column d_gap-25">
                                     <p class="text-xl text-bold">Nome da Pesquisa</p>
                                     <div class="survey-details d-flex d_gap-15 d_align-center">
@@ -125,37 +126,78 @@
                                                 style="color: #181818;">Só participantes credenciados</strong></p>
                                         <hr
                                             style="align-self: stretch; min-height: 100%; background-color:#D3D3D3; margin: 0;">
-                                        <p class="text-md d_text-gray"><strong
-                                                style="color: #181818;">350 respostas</strong></p>
+                                        <p class="text-md d_text-gray"><strong style="color: #181818;">350
+                                                respostas</strong></p>
                                     </div>
                                 </div>
                                 <div class="info-acoes d_display-flex d_gap-10">
-                                    <div class="actions d-flex d_gap-10">
-                                    <a href="#" class="button button-md button-gray text-md">Baixar Relatório</a>
-                                </div>
+                                    <div class="actions d-flex d_gap-10 d_align-end d_justify-end">
+                                        <a href="#" class="button button-md button-gray text-md">Baixar Relatório</a>
+                                    </div>
                                 </div>
                             </div>
 
                             <section class="charts-grid" id="charts-grid">
-                                    
+
                             </section>
+                        </div>
+                    </div>
 
-                            <div class="comentarios-pesquisa d_margin_top-30">
-                                <h3 class="text-md text-bold d_margin_bottom-10" style="color: #FF2B34;">
-                                    <i class="fa fa-comments"></i> Comentários dos participantes
-                                </h3>
+                    <div class="pesquisa box pesquisa_pergunta">
+                        <div class="comentarios-pesquisa">
+                            <h3 class="text-md text-bold d_margin_bottom-10" style="color: #4A4A4A;">
+                                <i class="fa fa-comments"></i> Comentários
+                            </h3>
 
-                                <div class="table-wrapper-comentarios">
-                                    <table class="table table-striped" style="width: 100%; margin: 0;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding: 15px;">1 - Tudo ok!</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                            <div class="comentarios-container">
+                                <table class="comentarios-tabela">
+                                    <thead>
+                                        <tr class="comentarios-header-row">
+                                            <th class="comentarios-th-comentario">Comentário</th>
+                                            <th class="comentarios-th-participante">Participante</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="comentarios-row">
+                                            <td class="comentarios-td-comentario">
+                                                O evento foi legal. O evento foi legal. O evento foi legal. O evento foi
+                                                legal. O evento foi legal. O evento foi legal. O evento foi legal. O
+                                                evento foi legal. O evento foi legal. O evento foi legal. O evento foi
+                                                legal. O evento foi legal. O evento foi legal. O evento foi legal. O
+                                                evento foi legal. O evento foi legal. O evento foi legal. O evento foi
+                                                legal. O evento foi legal.
+                                            </td>
+                                            <td class="comentarios-td-participante">
+                                                Eduardo Leandro Silva de Oliveira
+                                            </td>
+                                        </tr>
+                                        <tr class="comentarios-row">
+                                            <td class="comentarios-td-comentario">
+                                                Falta de organização nas filas.
+                                            </td>
+                                            <td class="comentarios-td-participante">
+                                                Marcelo Araujo Lins
+                                            </td>
+                                        </tr>
+                                        <tr class="comentarios-row">
+                                            <td class="comentarios-td-comentario">
+                                                Satisfação? Só decepção.
+                                            </td>
+                                            <td class="comentarios-td-participante">
+                                                Tom Lima
+                                            </td>
+                                        </tr>
+                                        <tr class="comentarios-row comentarios-last-row">
+                                            <td class="comentarios-td-comentario">
+                                                Top demais! Ansioso para a próxima edição.
+                                            </td>
+                                            <td class="comentarios-td-participante">
+                                                Estela Mendes da Rocha
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-
                         </div>
                     </div>
 

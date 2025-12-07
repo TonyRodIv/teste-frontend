@@ -892,7 +892,7 @@ background-image: radial-gradient(circle closest-side at center, #FFFFFF 0%, #FF
 
 div.actions {
     overflow: hidden;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 
 div.actions ul {

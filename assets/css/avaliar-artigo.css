@@ -203,7 +203,6 @@ table th{
 }
 
 .star-rating{
-    margin-bottom: 2.000em;
     margin-top: 1.000em;
 }
 
@@ -431,9 +430,6 @@ header {
 @media (max-width: 768px) {
   .ds-column-half {
     width: 100%;
-  }
-  .ds-items-lados-extremos {
-    flex-flow: column;
   }
   .ds-items-right {
     -webkit-box-pack: center !important;

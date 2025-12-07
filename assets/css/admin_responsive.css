@@ -50,7 +50,7 @@
     .tmp-no-border-desktop {
         border-left: none !important;
     }
-    
+
     /* === Tipos de submissão === */
     #tmp-predefinicoes .tmp-column {
         width: 100%;
@@ -235,7 +235,7 @@
     }
 }
 
-@media (max-width: 960px) {
+@media (min-width: 961px) {
     .__headbar .__mobile-criar_novo {
         display: none !important;
     }
@@ -243,6 +243,9 @@
     .__headbar .doity-logo {
         display: none;
     }
+}
+
+@media (max-width: 960px) {
     .__card .__details .__event_details {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -250,6 +253,7 @@
         gap: 15px;
         margin-bottom: 23px;
     }
+
     .modal_wrapper_shadow {
         z-index: 1000000;
     }
@@ -284,15 +288,11 @@
     }
 
     .headPage {
-        grid-template-columns: auto;
+        align-items: end;
     }
 
     .painel-info-artigos {
         gap: 0.8rem;
-    }
-
-    .btn-result {
-        display: none;
     }
 
     .info-textos {
@@ -881,6 +881,13 @@
 }
 
 @media (max-width: 728px) {
+    .btn-result {
+        display: none;
+    }
+
+    .headPage {
+        grid-template-columns: auto;
+    }
 
     #modalCredenciamento .modal-custom,
     #modalCredenciamentoMenu .modal-custom,
@@ -896,6 +903,10 @@
 }
 
 @media only screen and (max-width:640px) {
+    .star-rating{
+        display: flex;
+        justify-content: center;
+    }
     .survey-details {
         flex-direction: column;
         align-items: start;
@@ -907,10 +918,11 @@
         min-width: 100%;
     }
 
-    .painel-info-artigos .actions{
+    .painel-info-artigos .actions {
         width: 100%;
         text-align: center;
     }
+
     div.actions {
         padding-right: 0px;
     }
@@ -929,7 +941,7 @@
         gap: unset;
     }
 
-    
+
 }
 
 @media only screen and (max-width : 480px) {
@@ -1046,6 +1058,10 @@
     .holder {
         width: 100%;
         padding: 30px 10px 0 10px !important;
+    }
+
+    .headPage {
+        padding: 0 10px;
     }
 
     .header-area,
