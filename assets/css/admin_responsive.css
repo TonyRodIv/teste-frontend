@@ -37,6 +37,7 @@
         padding-bottom: 30px;
         width: 100%;
     }
+
     .charts-grid {
         grid-template-columns: 1fr;
     }
@@ -217,6 +218,10 @@
     .holder {
         padding: 30px 50px 0 50px !important;
     }
+
+    .charts-grid& {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
 
 @media (min-width: 1049px) {
@@ -392,163 +397,35 @@
     }
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-
-@media only screen and (max-width:390px) {
-    .data-row {
-        flex-wrap: wrap;
+@media (min-width: 961px) {
+    .__headbar .__mobile-criar_novo {
+        display: none !important;
     }
 
-    .input-data {
-        /* flex-grow: 1; */
-        max-width: 100%;
-    }
-
-    .radio-row {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .row.buttons {
-        flex-direction: column;
-    }
-
-    .info-acoes {
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (max-width : 480px) {
-    .painel-info-artigos {
-        padding: 1rem;
-    }
-
-    .filter-buttom-right .submit {
-        clear: both;
-    }
-
-    .box-filter .input {
-        margin-bottom: 10px;
-    }
-
-    .filter .text,
-    .filter .select {
-        width: 100%;
-    }
-
-    #resumo-credenciamento .box-credenciamento {
-        width: 100%;
-        margin: 0 0 10px 0;
-    }
-
-    #credenciamento-busca {
-        margin: 0;
-        padding: 0;
-    }
-
-    .credenciamento-opcoes .filter {
-        margin: 0;
-        padding: 10px;
-    }
-
-    .credenciamento-opcoes .filter .input {
-        margin-bottom: 10px;
-    }
-
-    .credenciamento-opcoes .filter .submit {
-        margin: 0;
-    }
-
-    #opcoes-enviar-submissao .input.radio input {
-        width: 20px;
-        float: left;
-    }
-
-    #opcoes-enviar-submissao .input.radio label {
-        width: 90% !important;
-    }
-
-    .painel-artigos-left,
-    .painel-artigos-right {
-        width: 100% !important;
-    }
-
-    .painel-artigos-left-item-acoes {
-        padding: 10px 0 !important;
-    }
-
-    .painel-artigos-left-item-acoes .painel-artigos-left-item-no-icon {
+    .__headbar .doity-logo {
         display: none;
     }
-
-    .painel-artigos-left-item-acoes .painel-artigos-left-item-info {
-        padding: 0;
-    }
-
-    .table-resp,
-    .table-resp thead,
-    .table-resp tbody,
-    .table-resp th,
-    .table-resp td,
-    .table-resp tr {
-        display: revert !important;
-    }
-
-    .table-resp thead {
-        display: table-header-group !important;
-    }
-
-    .table-resp tr {
-        display: table-row !important;
-    }
-
-    .table-resp td,
-    .table-resp th {
-        display: table-cell !important;
-    }
-
-    .button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .button-md {
-        padding: 14px 0;
-    }
-
-    .text-md {
-        font-size: 0.85rem;
-    }
-
-    .radio-row {
-        gap: 0;
-    }
-
-    .holder {
-        width: 100%;
-        padding: 30px 10px 0 10px !important;
-    }
-
-    .header-area,
-    .bar-area {
-        grid-template-columns: 1.2fr 0.8fr;
-    }
-
 }
 
-@media only screen and (max-width:640px) {
-    .survey-details {
-        flex-direction: column;
-        align-items: start;
-        width: 100%;
-        gap: 5px;
-    }
-
-    .survey-details hr {
-        min-width: 100%;
+@media only screen and (min-width : 1180px) {
+    #opcoes-enviar-submissao .input.radio label {
+        width: 96%;
     }
 }
+
+@media only screen and (min-width : 1300px) {
+    #opcoes-enviar-submissao .input.radio label {
+        width: 96%;
+    }
+}
+
+@media only screen and (min-width : 1460px) {
+    #opcoes-enviar-submissao .input.radio label {
+        width: calc(100% - 25px);
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (max-width : 768px) {
     #modal_premium_content {
@@ -769,20 +646,6 @@
 
     .cd-multi-steps {
         gap: 8px;
-    }
-
-    #admin-nav li {
-        padding: 4px 8px 12px 8px;
-        height: 39px;
-    }
-
-    #admin-nav li:hover {
-        background: #DDD;
-        padding-left: 3px;
-    }
-
-    #admin-nav li span {
-        display: none;
     }
 
     #admin-nav li img {
@@ -1050,36 +913,187 @@
     }
 }
 
+@media only screen and (max-width:640px) {
+    .survey-details {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .survey-details hr {
+        min-width: 100%;
+    }
+
+    .painel-info-artigos .actions{
+        width: 100%;
+        text-align: center;
+    }
+    div.actions {
+        padding-right: 0px;
+    }
+}
+
 @media (max-width: 500px) {
     .__headbar .__centered {
         gap: unset;
     }
+
+    
 }
 
-@media (min-width: 961px) {
-    .__headbar .__mobile-criar_novo {
-        display: none !important;
+@media only screen and (max-width : 480px) {
+
+    .charts-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
-    .__headbar .doity-logo {
+    .painel-info-artigos {
+        padding: 1rem;
+    }
+
+    .filter-buttom-right .submit {
+        clear: both;
+    }
+
+    .box-filter .input {
+        margin-bottom: 10px;
+    }
+
+    .filter .text,
+    .filter .select {
+        width: 100%;
+    }
+
+    #resumo-credenciamento .box-credenciamento {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #credenciamento-busca {
+        margin: 0;
+        padding: 0;
+    }
+
+    .credenciamento-opcoes .filter {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .credenciamento-opcoes .filter .input {
+        margin-bottom: 10px;
+    }
+
+    .credenciamento-opcoes .filter .submit {
+        margin: 0;
+    }
+
+    #opcoes-enviar-submissao .input.radio input {
+        width: 20px;
+        float: left;
+    }
+
+    #opcoes-enviar-submissao .input.radio label {
+        width: 90% !important;
+    }
+
+    .painel-artigos-left,
+    .painel-artigos-right {
+        width: 100% !important;
+    }
+
+    .painel-artigos-left-item-acoes {
+        padding: 10px 0 !important;
+    }
+
+    .painel-artigos-left-item-acoes .painel-artigos-left-item-no-icon {
         display: none;
     }
-}
 
-@media only screen and (min-width : 1180px) {
-    #opcoes-enviar-submissao .input.radio label {
-        width: 96%;
+    .painel-artigos-left-item-acoes .painel-artigos-left-item-info {
+        padding: 0;
     }
-}
 
-@media only screen and (min-width : 1300px) {
-    #opcoes-enviar-submissao .input.radio label {
-        width: 96%;
+    .table-resp,
+    .table-resp thead,
+    .table-resp tbody,
+    .table-resp th,
+    .table-resp td,
+    .table-resp tr {
+        display: revert !important;
     }
+
+    .table-resp thead {
+        display: table-header-group !important;
+    }
+
+    .table-resp tr {
+        display: table-row !important;
+    }
+
+    .table-resp td,
+    .table-resp th {
+        display: table-cell !important;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button-md {
+        padding: 14px 0;
+    }
+
+    .text-md {
+        font-size: 0.85rem;
+    }
+
+    .radio-row {
+        gap: 0;
+    }
+
+    .holder {
+        width: 100%;
+        padding: 30px 10px 0 10px !important;
+    }
+
+    .header-area,
+    .bar-area {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+
 }
 
-@media only screen and (min-width : 1460px) {
-    #opcoes-enviar-submissao .input.radio label {
-        width: calc(100% - 25px);
+@media only screen and (max-width:390px) {
+    .data-row {
+        flex-wrap: wrap;
+    }
+
+    .input-data {
+        /* flex-grow: 1; */
+        max-width: 100%;
+    }
+
+    .radio-row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .row.buttons {
+        flex-direction: column;
+    }
+
+    .info-acoes {
+        flex-wrap: wrap;
+    }
+
+    .holder {
+        padding: 20px 5px 0 5px !important;
+    }
+
+    .holder .box {
+        padding: 15px;
     }
 }

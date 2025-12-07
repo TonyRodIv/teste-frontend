@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    /* font-family: Arial; */
 }
 
 img {
@@ -14,7 +14,6 @@ body{
     background-color: #eeeeee !important;
     position: relative;
 }
-
 
 table td, th{
     border-bottom: 0.063em solid #dddddd;
@@ -267,10 +266,6 @@ table th{
     clear: both;
 }
 
-.clearfix {
-    *zoom: 1;
-}
-
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -385,6 +380,7 @@ header {
 /*Avaliar apresentação*/
 .container-avaliacao-apresentacao {
     max-width: 60em;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
     padding: 35px 40px;

@@ -73,7 +73,7 @@ $(document).ready(function () {
 
 let data_survey = {
     "01": {
-        "pergunta": "Você gostou da apresentação do participante x?",
+        "pergunta": "Qual foi seu nível de satisfação geral com o evento?",
         "obrigatorio": "True",
         "detalhes": {
             "excelente": { "count": 42 },
@@ -84,7 +84,7 @@ let data_survey = {
         }
     },
     "02": {
-        "pergunta": "Você gostou da apresentação do participante x?",
+        "pergunta": "Como você avalia a organização do evento (inscrição, logística, horários etc.)?",
         "obrigatorio": "False",
         "detalhes": {
             "excelente": { "count": 120 },
@@ -95,7 +95,7 @@ let data_survey = {
         }
     },
     "03": {
-        "pergunta": "Você gostou da apresentação do participante x?",
+        "pergunta": "O local e a infraestrutura do evento atenderam às suas expectativas?",
         "obrigatorio": "True",
         "detalhes": {
             "excelente": { "count": 20 },
@@ -106,7 +106,7 @@ let data_survey = {
         }
     },
     "04": {
-        "pergunta": "Você gostou da apresentação do participante x?",
+        "pergunta": "Como você avalia a qualidade dos palestrantes e apresentadores?",
         "obrigatorio": "False",
         "detalhes": {
             "excelente": { "count": 19 },
@@ -117,7 +117,7 @@ let data_survey = {
         }
     },
     "05": {
-        "pergunta": "Você gostou da apresentação do participante x?",
+        "pergunta": "O conteúdo apresentado foi relevante e útil para você?",
         "obrigatorio": "False",
         "detalhes": {
             "excelente": { "count": 9 },
@@ -128,7 +128,7 @@ let data_survey = {
         }
     },
     "06": {
-        "pergunta": "Você gostou da apresentação do participante x?",
+        "pergunta": "Você gostou da apresentação do participante X?",
         "obrigatorio": "True",
         "detalhes": {
             "excelente": { "count": 17 },
