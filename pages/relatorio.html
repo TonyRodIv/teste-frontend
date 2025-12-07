@@ -95,9 +95,8 @@
 
                         <div class="breadcrumb" style="padding: 0 35px;">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
-                                    href="..//index.html">Painel</a><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
+                                    href="..//index.html">Painel</a><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>Resultado da pesquisa de satisfação </p>
@@ -112,53 +111,134 @@
                             <h2>Resultado da pesquisa de satisfação</h2>
                         </div>
 
-                        <div class="content forms">
-
-                            <div class="d-flex d_justify-between d_align-items-center d_flex-wrap d_gap-15 d_margin_bottom-20"
-                                style="border-bottom: 1px solid #eee; padding-bottom: 20px;">
-                                <div class="dados_pesquisa">
-                                    <h1 class="text-xl" style="color: #4A4A4A; margin-bottom: 5px;">Pesquisa de
-                                        Qualidade do Evento</h1>
-                                    <div class="text-md" style="color: #666;">
-                                        Data: <strong>01/12/2025</strong> | Respostas: <strong>1</strong>
+                        <div class="content forms d-flex d_flex-column d_gap-35">
+                            <div class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap d_gap-15">
+                                <div class="info-textos d-flex d_flex-column d_gap-25">
+                                    <p class="text-xl text-bold">Nome da Pesquisa</p>
+                                    <div class="survey-details d-flex d_gap-15 d_align-center">
+                                        <p class="text-md d_text-gray">Data: <strong
+                                                style="color: #181818;">16/02/2025</strong></p>
+                                        <hr
+                                            style="align-self: stretch; min-height: 100%; background-color:#D3D3D3; margin: 0;">
+                                        <p class="text-md d_text-gray">Pesquisa enviada para: <strong
+                                                style="color: #181818;">Só participantes credenciados</strong></p>
+                                        <hr
+                                            style="align-self: stretch; min-height: 100%; background-color:#D3D3D3; margin: 0;">
+                                        <p class="text-md d_text-gray"><strong
+                                                style="color: #181818;">350 respostas</strong></p>
                                     </div>
                                 </div>
-
-                                <div class="actions d-flex d_gap-10">
-                                    <a href="#"
-                                        class="button button-md button-gray text-md">Baixar Relatório</a>
+                                <div class="info-acoes d_display-flex d_gap-10">
+                                    <div class="actions d-flex d_gap-10">
+                                    <a href="#" class="button button-md button-gray text-md">Baixar Relatório</a>
+                                </div>
                                 </div>
                             </div>
 
-                            <div class="charts-grid">
+                            <section class="charts-grid">
+                                    <article class="chart-card">
+                                        <header class="header-area">
+                                            <div>
+                                                <span class="number">00</span>
+                                                <h2 class="question">Você gostou da apresentação do participante x?</h2>
+                                            </div>
+                                            <div class="score-area d-flex d_flex-column">
+                                                <strong class="percentage">58%</strong>
+                                                <span class="badge">Excelente</span>
+                                            </div>
+                                        </header>
+                                        <section class="d-flex d_flex-column d_gap-05">
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100"  class="bar_green"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_light_green"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_yellow"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_pink"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_red"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
 
-                                <div class="chart-card">
-                                    <h3>1 - Como você avaliaria sua experiência geral no evento?</h3>
-                                    <div id="chart-1" class="chart-bars">
-                                    </div>
-                                </div>
+                                        </section>
+                                    </article>
+                                    <article class="chart-card">
+                                        <header class="header-area">
+                                            <div>
+                                                <span class="number">00</span>
+                                                <h2 class="question">Você gostou da apresentação do participante x?</h2>
+                                            </div>
+                                            <div class="score-area d-flex d_flex-column">
+                                                <strong class="percentage">58%</strong>
+                                                <span class="badge">Excelente</span>
+                                            </div>
+                                        </header>
+                                        <section class="d-flex d_flex-column d_gap-05">
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100"  class="bar_green"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_light_green"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_yellow"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_pink"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
+                                            <div class="bar-area">
+                                                <progress id="" value="20" max="100" class="bar_red"></progress>
+                                                <div class="legend-row">
+                                                    <span class="label text-md">Excelente</span>
+                                                    <strong class="count text-md">28</strong>
+                                                </div>
+                                            </div>
 
-                                <div class="chart-card">
-                                    <h3>2 - O conteúdo apresentado foi relevante para você?</h3>
-                                    <div id="chart-2" class="chart-bars"></div>
-                                </div>
+                                        </section>
+                                    </article>
+                                    
 
-                                <div class="chart-card">
-                                    <h3>3 - A qualidade dos palestrantes foi satisfatória?</h3>
-                                    <div id="chart-3" class="chart-bars"></div>
-                                </div>
-
-                                <div class="chart-card">
-                                    <h3>4 - Como você avalia a organização do evento?</h3>
-                                    <div id="chart-4" class="chart-bars"></div>
-                                </div>
-
-                                <div class="chart-card">
-                                    <h3>5 - Pergunta Exemplo</h3>
-                                    <div id="chart-5" class="chart-bars"></div>
-                                </div>
-
-                            </div>
+                            </section>
 
                             <div class="comentarios-pesquisa d_margin_top-30">
                                 <h3 class="text-md text-bold d_margin_bottom-10" style="color: #FF2B34;">

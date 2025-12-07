@@ -851,3 +851,4 @@ function limparFormulario() {
     $("#input-nova-pergunta").val("");
     $("#check-obrigatorio").prop("checked", false);
 }
+
