@@ -1,3 +1,189 @@
+/* --------------------------------------------------------------
+        ADMIN TRABALHOS - MODELO DE SUBMISSÕES
+--------------------------------------------------------------*/
+
+@media only screen and (min-width : 1460px) {
+    #opcoes-enviar-submissao .input.radio label {
+        width: calc(100% - 25px);
+    }
+}
+
+@media only screen and (min-width : 1300px) {
+    #opcoes-enviar-submissao .input.radio label {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width:1285px) {
+    .holder {
+        padding: 30px 50px 0 50px !important;
+    }
+
+    .charts-grid& {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media only screen and (min-width : 1180px) {
+    #opcoes-enviar-submissao .input.radio label {
+        width: 96%;
+    }
+}
+
+@media (min-width: 1049px) {
+    #tmp-informacoes .tmp-width-15-percent {
+        width: 15%;
+    }
+
+    #tmp-informacoes .tmp-width-20-percent {
+        width: 20%;
+    }
+
+    #tmp-informacoes .tmp-width-30-percent {
+        width: 30%;
+    }
+
+    #tmp-informacoes .tmp-width-35-percent {
+        width: 35%;
+    }
+
+    .tmp-no-border-desktop {
+        border-left: none !important;
+    }
+    
+    /* === Tipos de submissão === */
+    #tmp-predefinicoes .tmp-column {
+        width: 100%;
+        margin-top: -1px;
+    }
+
+    .tmp-arrow-right {
+        border-right: 1px solid #8f8f8e !important;
+    }
+
+    #tmp-predefinicoes .tmp-action {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    /* === Detalhes de submissão === */
+    #tmp-detalhes-submissao .tmp-column {
+        width: 100% !important;
+    }
+
+    #tmp-detalhes-submissao .arrow {
+        display: none;
+    }
+
+    /* === Informações - Menu dos modelos === */
+    #tmp-informacoes .tmp-column {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+    }
+
+    #tmp-informacoes .tmp-column .tmp-one-line,
+    #tmp-informacoes .tmp-column .tmp-two-line,
+    #tmp-informacoes .tmp-column .tmp-three-line {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .tmp-column-info .tmp-two-line.tmp-first {
+        border-left: 1px solid #ccc !important;
+        padding-left: 30px !important;
+    }
+
+    .tmp-column-link-spacing p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    /* === Botão exportar trabalhos === */
+    #tmp-exportar-trabalhos .tmp-dropdown-collapse {
+        bottom: -35px !important;
+        left: -180px !important;
+    }
+
+    /* === Opções de busca (filtro) === */
+    #tmp-opcoes-busca form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+
+    #tmp-opcoes-busca .input {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    #tmp-opcoes-busca .submit {
+        width: 100px !important;
+        margin-top: 0 !important;
+    }
+
+    /* === Tabela de submissões === */
+    #tmp-tabela-submissoes table thead {
+        display: none;
+    }
+
+    #tmp-tabela-submissoes table tbody tr {
+        padding: 20px 0;
+    }
+
+    #tmp-tabela-submissoes table tbody tr td {
+        display: block;
+        padding: 10px !important;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #tmp-tabela-submissoes table tbody tr td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        line-height: 26px;
+    }
+
+    #tmp-tabela-submissoes table tbody tr td .tmp-title-td {
+        font-size: 10px;
+        text-transform: uppercase;
+        display: block;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+        background-color: #eeeeee;
+    }
+
+    #tmp-tabela-submissoes .tmp-tr-space {
+        height: 50px;
+    }
+
+    .tmp-dropdown-collapse {
+        bottom: -35px !important;
+        left: 10px !important;
+    }
+
+    /* === Ações da tabela de submissão === */
+    #tmp-acoes-tabela>* {
+        width: 100%;
+    }
+
+    #tmp-acoes-tabela .tmp-actions-filter {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+
+    #tmp-acoes-tabela .tmp-actions-filter>* {
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px 0;
+    }
+}
+
 @media (max-width: 1030px) {
 
     .__card>.__items-row {
@@ -43,16 +229,27 @@
     }
 }
 
-@media (max-height: 610px) {
-    .modal-custom {
-        max-height: 100%;
-        margin: 10px 0;
-        top: 48%;
+@media (max-width: 1020px) {
+    .__card {
+        padding: 20px 43px 20px 53px
     }
 }
 
 @media (max-width: 960px) {
+    .__headbar .__mobile-criar_novo {
+        display: none !important;
+    }
 
+    .__headbar .doity-logo {
+        display: none;
+    }
+    .__card .__details .__event_details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 15px;
+        margin-bottom: 23px;
+    }
     .modal_wrapper_shadow {
         z-index: 1000000;
     }
@@ -192,236 +389,6 @@
     .header-area,
     .bar-area {
         grid-template-columns: 1.2fr 0.8fr;
-    }
-}
-
-@media (max-width: 728px) {
-
-    #modalCredenciamento .modal-custom,
-    #modalCredenciamentoMenu .modal-custom,
-    #modalAutocredenciamento .modal-custom {
-        margin: -250px 0 0 0 !important;
-        left: 0%;
-    }
-
-    .__info h3,
-    .__info i {
-        display: none;
-    }
-}
-
-/* --------------------------------------------------------------
-        ADMIN TRABALHOS - MODELO DE SUBMISSÕES
---------------------------------------------------------------*/
-
-@media only screen and (max-width:1285px) {
-    .holder {
-        padding: 30px 50px 0 50px !important;
-    }
-
-    .charts-grid& {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-}
-
-@media (min-width: 1049px) {
-    #tmp-informacoes .tmp-width-15-percent {
-        width: 15%;
-    }
-
-    #tmp-informacoes .tmp-width-20-percent {
-        width: 20%;
-    }
-
-    #tmp-informacoes .tmp-width-30-percent {
-        width: 30%;
-    }
-
-    #tmp-informacoes .tmp-width-35-percent {
-        width: 35%;
-    }
-
-    .tmp-no-border-desktop {
-        border-left: none !important;
-    }
-}
-
-@media (max-width: 1020px) {
-    .__card {
-        padding: 20px 43px 20px 53px
-    }
-}
-
-@media (max-width: 950px) {
-    .__card .__details .__event_details {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        gap: 15px;
-        margin-bottom: 23px;
-    }
-}
-
-@media (max-width: 1049px) {
-
-    /* === Tipos de submissão === */
-    #tmp-predefinicoes .tmp-column {
-        width: 100%;
-        margin-top: -1px;
-    }
-
-    .tmp-arrow-right {
-        border-right: 1px solid #8f8f8e !important;
-    }
-
-    #tmp-predefinicoes .tmp-action {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-
-    /* === Detalhes de submissão === */
-    #tmp-detalhes-submissao .tmp-column {
-        width: 100% !important;
-    }
-
-    #tmp-detalhes-submissao .arrow {
-        display: none;
-    }
-
-    /* === Informações - Menu dos modelos === */
-    #tmp-informacoes .tmp-column {
-        width: 100%;
-        height: auto;
-        margin: 15px 0;
-    }
-
-    #tmp-informacoes .tmp-column .tmp-one-line,
-    #tmp-informacoes .tmp-column .tmp-two-line,
-    #tmp-informacoes .tmp-column .tmp-three-line {
-        margin: 0;
-        padding-bottom: 0;
-    }
-
-    .tmp-column-info .tmp-two-line.tmp-first {
-        border-left: 1px solid #ccc !important;
-        padding-left: 30px !important;
-    }
-
-    .tmp-column-link-spacing p:last-of-type {
-        margin-bottom: 0;
-    }
-
-    /* === Botão exportar trabalhos === */
-    #tmp-exportar-trabalhos .tmp-dropdown-collapse {
-        bottom: -35px !important;
-        left: -180px !important;
-    }
-
-    /* === Opções de busca (filtro) === */
-    #tmp-opcoes-busca form {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-        flex-flow: column;
-    }
-
-    #tmp-opcoes-busca .input {
-        width: 100% !important;
-        margin-right: 0 !important;
-        margin-bottom: 20px;
-    }
-
-    #tmp-opcoes-busca .submit {
-        width: 100px !important;
-        margin-top: 0 !important;
-    }
-
-    /* === Tabela de submissões === */
-    #tmp-tabela-submissoes table thead {
-        display: none;
-    }
-
-    #tmp-tabela-submissoes table tbody tr {
-        padding: 20px 0;
-    }
-
-    #tmp-tabela-submissoes table tbody tr td {
-        display: block;
-        padding: 10px !important;
-        border-bottom: 1px solid #ddd;
-    }
-
-    #tmp-tabela-submissoes table tbody tr td:before {
-        content: attr(data-th);
-        font-weight: bold;
-        text-transform: uppercase;
-        display: block;
-        line-height: 26px;
-    }
-
-    #tmp-tabela-submissoes table tbody tr td .tmp-title-td {
-        font-size: 10px;
-        text-transform: uppercase;
-        display: block;
-        padding: 5px;
-        width: 100%;
-        margin-bottom: 5px;
-        background-color: #eeeeee;
-    }
-
-    #tmp-tabela-submissoes .tmp-tr-space {
-        height: 50px;
-    }
-
-    .tmp-dropdown-collapse {
-        bottom: -35px !important;
-        left: 10px !important;
-    }
-
-    /* === Ações da tabela de submissão === */
-    #tmp-acoes-tabela>* {
-        width: 100%;
-    }
-
-    #tmp-acoes-tabela .tmp-actions-filter {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-        flex-flow: column;
-    }
-
-    #tmp-acoes-tabela .tmp-actions-filter>* {
-        width: 100%;
-        margin: 5px 0;
-        padding: 10px 0;
-    }
-}
-
-@media (min-width: 961px) {
-    .__headbar .__mobile-criar_novo {
-        display: none !important;
-    }
-
-    .__headbar .doity-logo {
-        display: none;
-    }
-}
-
-@media only screen and (min-width : 1180px) {
-    #opcoes-enviar-submissao .input.radio label {
-        width: 96%;
-    }
-}
-
-@media only screen and (min-width : 1300px) {
-    #opcoes-enviar-submissao .input.radio label {
-        width: 96%;
-    }
-}
-
-@media only screen and (min-width : 1460px) {
-    #opcoes-enviar-submissao .input.radio label {
-        width: calc(100% - 25px);
     }
 }
 
@@ -913,6 +880,21 @@
     }
 }
 
+@media (max-width: 728px) {
+
+    #modalCredenciamento .modal-custom,
+    #modalCredenciamentoMenu .modal-custom,
+    #modalAutocredenciamento .modal-custom {
+        margin: -250px 0 0 0 !important;
+        left: 0%;
+    }
+
+    .__info h3,
+    .__info i {
+        display: none;
+    }
+}
+
 @media only screen and (max-width:640px) {
     .survey-details {
         flex-direction: column;
@@ -931,6 +913,14 @@
     }
     div.actions {
         padding-right: 0px;
+    }
+}
+
+@media (max-height: 610px) {
+    .modal-custom {
+        max-height: 100%;
+        margin: 10px 0;
+        top: 48%;
     }
 }
 

@@ -31,35 +31,35 @@ $(document).ready(function () {
                                                 <progress id="" value="${cardData.detalhes.excelente.count}" max="${chart_result}"  class="bar_green"></progress>
                                                 <div class="legend-row">
                                                     <span class="label text-l">Excelente</span>
-                                                    <strong class="count text-l">${cardData.detalhes.excelente.count}</strong>
+                                                    <strong class="count text-l">${cardData.detalhes.excelente.count < 10 ? '0' + cardData.detalhes.excelente.count : cardData.detalhes.excelente.count}</strong>
                                                 </div>
                                             </div>
                                             <div class="bar-area">
                                                 <progress id="" value="${cardData.detalhes.bom.count}" max="${chart_result}" class="bar_light_green"></progress>
                                                 <div class="legend-row">
                                                     <span class="label text-l">Bom</span>
-                                                    <strong class="count text-l">${cardData.detalhes.bom.count}</strong>
+                                                    <strong class="count text-l">${cardData.detalhes.bom.count < 10 ? '0' + cardData.detalhes.bom.count : cardData.detalhes.bom.count}</strong>
                                                 </div>
                                             </div>
                                             <div class="bar-area">
                                                 <progress id="" value="${cardData.detalhes.regular.count}" max="${chart_result}" class="bar_yellow"></progress>
                                                 <div class="legend-row">
                                                     <span class="label text-l">Regular</span>
-                                                    <strong class="count text-l">${cardData.detalhes.regular.count}</strong>
+                                                    <strong class="count text-l">${cardData.detalhes.regular.count < 10 ? '0' + cardData.detalhes.regular.count : cardData.detalhes.regular.count}</strong>
                                                 </div>
                                             </div>
                                             <div class="bar-area">
                                                 <progress id="" value="${cardData.detalhes.ruim.count}" max="${chart_result}" class="bar_pink"></progress>
                                                 <div class="legend-row">
                                                     <span class="label text-l">Ruim</span>
-                                                    <strong class="count text-l">${cardData.detalhes.ruim.count}</strong>
+                                                    <strong class="count text-l">${cardData.detalhes.ruim.count < 10 ? '0' + cardData.detalhes.ruim.count : cardData.detalhes.ruim.count}</strong>
                                                 </div>
                                             </div>
                                             <div class="bar-area">
                                                 <progress id="" value="${cardData.detalhes.pessimo.count}" max="${chart_result}" class="bar_red"></progress>
                                                 <div class="legend-row">
                                                     <span class="label text-l">Péssimo</span>
-                                                    <strong class="count text-l">${cardData.detalhes.pessimo.count}</strong>
+                                                    <strong class="count text-l">${cardData.detalhes.pessimo.count < 10 ? '0' + cardData.detalhes.pessimo.count : cardData.detalhes.pessimo.count}</strong>
                                                 </div>
                                             </div>
 
