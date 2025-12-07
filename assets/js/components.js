@@ -797,6 +797,8 @@ $(document).ready(function () {
 });
 
 
+
+
 function toggleFormulario() {
     var $container = $("#container-nova-pergunta");
     
