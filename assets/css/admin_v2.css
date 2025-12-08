@@ -768,7 +768,7 @@ label.crop-label input {
     width: 100%;
 }
 .__headbar .__perfil .__info {
-    padding: 7px 0 5px 0;
+    /* padding: 7px 0 5px 0; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

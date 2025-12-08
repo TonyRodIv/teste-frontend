@@ -1,3 +1,4 @@
+/* --- Componentização da navbar e header --- */
 $(document).ready(function () {
     const isInPages = window.location.pathname.includes("/pages/");
     const pathPrefix = isInPages ? "../" : "./";
@@ -517,7 +518,7 @@ $(document).ready(function () {
                                 <!-- pesquisa -->
 
                                 <li class="">
-                                    <a class="selected-svg" href="https://doity.com.br/admin/pesquisas/index/279481">
+                                    <a class="selected-svg" href="${pathPrefix}/index.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
                                             <path
@@ -771,6 +772,7 @@ $(document).on('click', function (e) {
     }
 });
 
+/* --- Funcionalidade de Modal --- */
 
 function hideModal() {
     $("#container").hide();
@@ -797,68 +799,40 @@ $('#btn-pesquisa, #btn-survey').click(function (e) {
 
 });
 
-function toggleFormulario() {
-    var $container = $("#container-nova-pergunta");
+/* --- Funcionalidade de Comentários --- */
 
-    if ($container.is(":hidden")) {
-        $container.show();
-        $("#input-nova-pergunta").focus();
-    } else {
-        $container.hide();
-        limparFormulario();
-    }
-    $("#btn-add-wrapper").hide()
-}
+// $('#btn-survey').on('click', function() {
+//     var comentario = $('#PesquisaAvaliacaoComentario').val();
+    
+//     if (comentario && comentario.trim() !== "") {
+//         var listaComentarios = JSON.parse(localStorage.getItem('comentarios_doity') || '[]');
+        
+//         listaComentarios.unshift({
+//             msg: comentario,
+//             autor: "Participante Teste",
+//             data: new Date().toLocaleDateString('pt-BR')
+//         });
+        
+//         localStorage.setItem('comentarios_doity', JSON.stringify(listaComentarios));
+        
+//         $('#PesquisaAvaliacaoComentario').val('');
+//     }
+// });
 
-function adicionarNaTabela() {
-    var textoPergunta = $("#input-nova-pergunta").val();
-    var isObrigatorio = $("#check-obrigatorio").is(":checked");
-    var $tabela = $("#tabela-perguntas");
-
-    if ($.trim(textoPergunta) === "") {
-        alert("Por favor, digite uma pergunta.");
-        return;
-    }
-
-    var idTest = Math.floor(Math.random() * 10000);
-    var novaLinha = `
-        <tr data-id="${idTest}" >
-                                            <td data-th="text-md">${textoPergunta} ${isObrigatorio ? '<span style="color:red; font-weight:bold;">*</span>' : ''}</td>
-                                            <td data-th="Ações" class="d-flex d_align-center d_gap-05">
-                                                <a href="./pages/editar-pergunta.html"><svg
-                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none">
-                                                        <path
-                                                            d="M4.75 19.2501L9 18.2501L18.2929 8.9572C18.6834 8.56667 18.6834 7.93351 18.2929 7.54298L16.4571 5.7072C16.0666 5.31667 15.4334 5.31667 15.0429 5.7072L5.75 15.0001L4.75 19.2501Z"
-                                                            stroke="#5A5A5A" stroke-width="1.5" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                        <path d="M19.25 19.25H13.75" stroke="#5A5A5A" stroke-width="1.5"
-                                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg></a>
-                                                <a href="#" class="btn-delete"><img src="./assets/img/trash.svg" width="20px" alt=""></a>
-                                            </td>
-                                        </tr>
-    `;
-    $tabela.append(novaLinha);
-    toggleFormulario();
-    limparFormulario();
-    atualizarContador();
-    $("#btn-add-wrapper").css("display", "flex");
-}
-
-function limparFormulario() {
-    $("#input-nova-pergunta").val("");
-    $("#check-obrigatorio").prop("checked", false);
-}
-
-$('#tabela-perguntas').on('click', '.btn-delete', function (e) {
-    e.preventDefault();
-    if (confirm("Deseja realmente excluir esta pergunta?")) {
-        $(this).closest('tr').remove();
-    }
-});
-
-function atualizarContador() {
-    var total = $("#tabela-perguntas tr").length;
-    $("#contador-perguntas").text("(" + total + ")");
-}
+// if ($('.comentarios-tabela').length) {
+//     var comentariosSalvos = JSON.parse(localStorage.getItem('comentarios_doity') || '[]');
+//     var $tbody = $('.comentarios-tabela tbody');
+    
+//     comentariosSalvos.forEach(function(c) {
+//         var htmlLinha = `
+//             <tr class="comentarios-row">
+//                 <td class="comentarios-td-comentario text-md">${c.msg}</td>
+//                 <td class="comentarios-td-participante text-md">
+//                     ${c.autor} <br>
+//                     <small style="color:#999; font-size:11px;">${c.data}</small>
+//                 </td>
+//             </tr>
+//         `;
+//         $tbody.prepend(htmlLinha);
+//     });
+// }

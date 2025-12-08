@@ -98,14 +98,17 @@
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
+    cursor: pointer;
 }
 
 .button-md {
     padding: 8px 26px;
+    cursor: pointer;
 }
 
 .button-md-alt {
     padding: 14px 26px;
+    cursor: pointer;
 }
 
 .button-gray {
@@ -458,4 +461,19 @@ input[type="radio"] {
 
 .btn-close-modal:hover {
     color: #000;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#osx-modal-content {
+    animation: slideUpFade 0.4s ease-out forwards;
 }

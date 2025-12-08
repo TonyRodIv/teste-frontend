@@ -224,9 +224,9 @@ table th{
 .rating:hover .rating-star:hover,
 .rating:hover .rating-star:hover ~ .rating-star,
 .rating-input:checked ~ .rating-star {
-    background-position: 0 34px;
-
-
+    background: url("../img/star.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .criterio{
@@ -246,8 +246,9 @@ table th{
     width: 32px;
     height: 33px;
     margin-right: 5px;
-    background: url("../img/estrela-pesquisa.png") 0 0px;
-
+    background: url("../img/star-outline.svg") 0 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .trabalho-comentado{
