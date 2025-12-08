@@ -41,9 +41,8 @@
                     <div class="headPage">
                         <div class="breadcrumb">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
-                                    href="..//index.html">Painel</a><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
+                                    href="..//index.html">Painel</a><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg> Pesquisa de Satisfação</p>
@@ -112,7 +111,18 @@
                         <div class="row buttons d-flex d_justify-between d_gap-15">
                             <a class="button button-md-alt button-gray" href="../index.html">Cancelar</a>
 
-                            <input class="button button-md-alt button-red text-md text-l" type="submit" value="Salvar">
+                            <input id="btn-pesquisa" class="button button-md-alt button-red text-md text-l" type="button" value="Salvar">
+                        </div>
+                    </div>
+                    <div id="container" class="modal-overlay">
+                        <div id="content" style="width: 100vw;">
+                            <div id="osx-modal-content" style="padding: 50px 30px; position: relative;">
+                                <a href="../index.html" class="btn-close-modal" onclick="hideModal()">×</a>
+                                <div class="icon-container">
+                                    <img src="../assets/img/sucess.png" alt="" style="width: 60px;">
+                                </div>
+                                <div id="osx-modal-title">Pesquisa salva!</div>
+                            </div>
                         </div>
                     </div>
 

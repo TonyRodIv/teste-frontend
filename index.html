@@ -29,13 +29,13 @@
     <div id="wrapper">
         <div class="container">
             <div class="holder-parent">
-                <aside class="holder-left" id="sidebar-container">
-                </aside>
-                <div class="holder">
+                <nav class="holder-left" id="sidebar-container">
+                </nav>
+                <main class="holder">
                     <header class="__headbar doity" id="header-container">
                     </header>
-                    <div class="headPage">
-                        <div class="breadcrumb">
+                    <header class="headPage">
+                        <section class="breadcrumb">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
                                     href="https://doity.com.br/admin/eventos/painel/279481">Painel</a><svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
@@ -44,20 +44,17 @@
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg> </p>
                             <span>Pesquisa de Satisfação</span>
-                        </div>
+                        </section>
                         <div class="d-flex d_align-center"><a href="./pages/relatorio.html"
                                 class="button button-gray text-l btn-result">Resultados
                                 da pesquisa</a></div>
-                    </div>
-                    <div class="box pesquisa_pergunta">
+                    </header>
+                    <main class="box pesquisa_pergunta">
                         <div class="title">
                             <h2>Pesquisa</h2>
                         </div>
-                        <div class="mensagem">
-                        </div>
-                        <div class="content forms d-flex d_flex-column d_align-start d_gap-25">
-                            <div
-                                class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap d_gap-15">
+                        <section class="content forms d-flex d_flex-column d_align-start d_gap-25">
+                            <header class="painel-info-artigos d_display-flex d_justify-between d_align-end d_flex-wrap d_gap-15">
                                 <div class="info-textos d-flex d_flex-column d_gap-25">
                                     <p class="text-xl text-bold">Nome da Pesquisa</p>
                                     <div class="survey-details d-flex d_gap-15 d_align-center">
@@ -81,8 +78,8 @@
                                         Pré-visualizar
                                     </a>
                                 </div>
-                            </div>
-                            <div class="table-wrapper" style="overflow-x: auto;">
+                            </header>
+                            <section class="table-wrapper" style="overflow-x: auto;">
                                 <table class="table-resp d_table">
                                     <thead>
                                         <tr class="table-header">
@@ -125,12 +122,12 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
+                            </section>
                             <a id="btn-add-wrapper" onclick="toggleFormulario()"
                                 class="button button-gray text-md text-l">Adicionar
                                 pergunta</a>
 
-                            <div id="container-nova-pergunta" style="display: none;">
+                            <section id="container-nova-pergunta" style="display: none;">
                                 <div class="title">
                                     <h2 class="text-md">Nova Pergunta</h2>
                                 </div>
@@ -155,10 +152,10 @@
                                             class="button button-md-alt button-red text-md">Salvar Pergunta</button>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
 
-                        </div>
-                    </div>
+                        </section>
+                    </main>
                     <div class="d_width-100 d_display-flex d_justify-end send-survey">
                         <button id="btn-pesquisa" class="button button-red text-md text-l" data-toggle="tooltip"
                             title="">
@@ -200,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer">
+                    <footer class="footer">
                         <div id="footer">
                             <p>
                             </p>
@@ -212,8 +209,8 @@
                                 - <a href="#">Entre em Contato</a></p>
                             <p></p>
                         </div>
-                    </div>
-                </div>
+                    </footer>
+                </main>
             </div>
         </div>
     </div>

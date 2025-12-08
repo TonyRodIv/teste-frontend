@@ -32,13 +32,13 @@
     <input type="checkbox" id="mobile-menu-toggle" style="display: none;">
     <div id="wrapper">
         <div class="container">
-            <div class="holder-parent">
-                <aside class="holder-left" id="sidebar-container">
-                </aside>
-                <div class="holder">
+            <main class="holder-parent">
+                <nav class="holder-left" id="sidebar-container">
+                </nav>
+                <main class="holder">
                     <header class="__headbar doity" id="header-container">
                     </header>
-                    <div class="headPage">
+                    <header class="headPage">
                         <div class="breadcrumb">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
                                     href="..//index.html">Painel</a><svg xmlns="http://www.w3.org/2000/svg" width="20"
@@ -48,10 +48,10 @@
                                 </svg> Pesquisa de Satisfação</p>
                             <span>Editar Pergunta</span>
                         </div>
-                    </div>
+                    </header>
 
-                    <div class="box pesquisa_pergunta">
-                        <div class="emails">
+                    <main class="box pesquisa_pergunta">
+                        <section class="emails">
                             <div class="box">
                                 <div class="title">
                                     <h2>Editar pergunta</h2>
@@ -107,8 +107,8 @@
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </section>
+                    </main>
 
                     <div class="footer">
                         <div id="footer">
@@ -123,22 +123,11 @@
                             <p></p>
                         </div>
                     </div>
-                </div>
-            </div>
+                </main>
+            </main>
         </div>
     </div>
 
-    <div id="container" class="modal-overlay">
-        <div id="content" style="width: 100vw;">
-            <div id="osx-modal-content" style="padding: 50px 30px; position: relative;">
-                <a href="#" class="btn-close-modal" onclick="hideModal()">×</a>
-                <div class="icon-container">
-                    <img src="../assets/img/sucess.png" alt="" style="width: 60px;">
-                </div>
-                <div id="osx-modal-title">Pesquisa respondida!</div>
-            </div>
-        </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../assets/js/components.js"></script>
 </body>
