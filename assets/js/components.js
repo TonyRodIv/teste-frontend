@@ -753,10 +753,22 @@ $(document).ready(function () {
 
     atualizarContador();
 
-    $('#tabela-perguntas').on('click', '.btn-delete', function(e) {
-        $(this).closest('tr').remove(); 
-        atualizarContador(); 
+    $('#tabela-perguntas').on('click', '.btn-delete', function (e) {
+        $(this).closest('tr').remove();
+        atualizarContador();
     });
+});
+
+$(document).on('click', function (e) {
+    const $checkbox = $('#mobile-menu-toggle');
+
+    if ($checkbox.is(':checked') &&
+        !$(e.target).closest('#sidebar-container').length &&
+        !$(e.target).closest('#resp-menu').length &&
+        !$(e.target).is('#mobile-menu-toggle')) {
+
+        $checkbox.prop('checked', false);
+    }
 });
 
 
