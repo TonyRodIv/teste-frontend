@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Inter';
-    src: url("Inter-VariableFont_slnt,wght.ttf") format('truetype'),
-        url("Inter-VariableFont_slnt,wght.ttf") format('truetype');
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype'),
+        url("../fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype');
 }
 
 @media only screen and (min-width: 1021px) {
@@ -118,7 +118,6 @@
 
 .forms .input input {
 	float : left;
-	background-image : url("input-back.gif");
 	background-repeat : repeat-x;
 	background-color : transparent;
 	border : 1px solid #cdcdcd;

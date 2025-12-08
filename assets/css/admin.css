@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'Inter';
-    src: url("Inter-VariableFont_slnt,wght.ttf") format('truetype'),
-        url("Inter-VariableFont_slnt,wght.ttf") format('truetype');
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype'),
+        url("../fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype');
 }
 html, body {
-    background-image: url("../img/back-website.gif");
     background-repeat: repeat;
     height: 100%;
     margin: 0;
@@ -16,7 +15,6 @@ img {
     border: 0 none;
 }
 .wrapper {
-    background-image: url("../img/back-gradient.gif");
     background-repeat: repeat-x;
     float: left;
     min-height: 400px;
@@ -448,7 +446,7 @@ img {
 }
 .actionbox input.sb-select {
     background-color: transparent;
-    background-image: url("../img/select-actions.gif");
+    /* background-image: url("../img/select-actions.gif"); */
     background-position: right top;
     background-repeat: no-repeat;
     border: 1px solid #CDCDCD;
