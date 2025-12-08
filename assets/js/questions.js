@@ -31,7 +31,7 @@ $(document).ready(function () {
         $("#container-nova-pergunta .title h2").text("Editar Pergunta");
         
         if ($("#container-nova-pergunta").is(":hidden")) {
-            $("#container-nova-pergunta").show();
+            $("#container-nova-pergunta").slideDown();
             $("#btn-add-wrapper").hide();
         }
         
@@ -74,11 +74,13 @@ function toggleForm() {
     let $container = $("#container-nova-pergunta");
 
     if ($container.is(":hidden")) {
-        $container.show();
+        // $container.show();
+        $container.slideDown();
         $("#input-nova-pergunta").focus();
         $("#btn-add-wrapper").hide();
     } else {
-        $container.hide();
+        // $container.hide();
+        $container.slideUp();
         $("#btn-add-wrapper").css("display", "block");
         clearForm();
     }
