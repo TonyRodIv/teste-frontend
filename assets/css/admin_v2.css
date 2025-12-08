@@ -1303,7 +1303,7 @@ label.crop-label input {
     transition: 200ms all;
     width: 15px;
     height: 15px;
-    background-image: url("404.html");
+    /* background-image: url("404.html"); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -3105,7 +3105,7 @@ Basic Style
   content: '';
   height: 16px;
   width: 16px;
-  background: url("404.html") no-repeat center center;
+  /* background: url("404.html") no-repeat center center; */
   vertical-align: middle;
 }
 .cd-breadcrumb.custom-icons li > *::before, .cd-multi-steps.custom-icons li > *::before {
@@ -3116,7 +3116,7 @@ Basic Style
   width: 20px;
   margin-right: .4em;
   margin-top: -2px;
-  background: url("404.html") no-repeat 0 0;
+  /* background: url("404.html") no-repeat 0 0; */
   vertical-align: middle;
 }
 .cd-breadcrumb.custom-icons li:not(.current):nth-of-type(2) > *::before, .cd-multi-steps.custom-icons li:not(.current):nth-of-type(2) > *::before {

@@ -1,5 +1,3 @@
-/* --- Funcionalidade de criar/editar/apagar perguntas --- */
-// nenhum deles fazem alterações reais no data_survey para evitar apagar os valores pré colocados nas suas contagens
 let rowInEdition = null;
 
 $(document).ready(function () {

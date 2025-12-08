@@ -1,4 +1,3 @@
-/* --- Componentização da navbar e header --- */
 $(document).ready(function () {
     const isInPages = window.location.pathname.includes("/pages/");
     const pathPrefix = isInPages ? "../" : "./";
@@ -771,8 +770,6 @@ $(document).on('click', function (e) {
         $checkbox.prop('checked', false);
     }
 });
-
-/* --- Funcionalidade de Modal --- */
 
 function hideModal() {
     $("#container").hide();
