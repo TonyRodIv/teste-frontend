@@ -10,7 +10,6 @@ img {
 
 body{
     padding-top: 0px!important;
-    padding-bottom: 195px!important;
     background-color: #eeeeee !important;
     position: relative;
 }
@@ -291,16 +290,6 @@ header {
 
 }
 
-.footer{
-  padding-top: 50px !important;
-  padding-bottom: 50px;
-  background-color: #151515;
-  position: absolute;
-  bottom: 0;
-  left: 0; right: 0;
-}
-
-
 .box #flashMessage{
     padding: 0.313em 0.625em!important;
     width: 100%;
@@ -461,12 +450,6 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
-  }
-  .footer {
-    text-align: center;
-  }
-  .footer .ds-column-half:last-of-type {
-    margin-top: 20px;
   }
 }
 

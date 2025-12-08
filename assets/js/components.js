@@ -782,6 +782,7 @@ $('#btn-pesquisa, #btn-survey').click(function (e) {
     } else {
         $("#container").css("display", "flex");
     }
+
 });
 
 function toggleFormulario() {
@@ -794,6 +795,7 @@ function toggleFormulario() {
         $container.hide();
         limparFormulario();
     }
+    $("#btn-add-wrapper").hide()
 }
 
 function adicionarNaTabela() {
@@ -829,6 +831,7 @@ function adicionarNaTabela() {
     toggleFormulario();
     limparFormulario();
     atualizarContador();
+    $("#btn-add-wrapper").css("display", "flex");
 }
 
 function limparFormulario() {
