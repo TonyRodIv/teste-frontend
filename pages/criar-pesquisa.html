@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"
+    data-scrapbook-source="https://doity.com.br/admin/pesquisas/edit/1402" data-scrapbook-create="20251201182532438"
+    data-scrapbook-title="Pesquisas - Doity">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Pesquisas -
+        Doity </title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/doitystrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/admin_v2.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/admin_responsive.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/messages.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon"
+        href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex">
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="mobile-menu-toggle" style="display: none;">
+    <div id="wrapper">
+        <div class="container">
+            <div class="holder-parent">
+                <aside class="holder-left" id="sidebar-container">
+                </aside>
+                <div class="holder">
+                    <header class="__headbar doity" id="header-container">
+                    </header>
+                    <div class="headPage">
+                        <div class="breadcrumb">
+                            <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
+                                    href="..//index.html">Painel</a><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg> Pesquisa de Satisfação</p>
+                            <span>Criar Pesquisa de Satisfação</span>
+                        </div>
+                    </div>
+
+                    <div class="pesquisa box pesquisa_pergunta">
+                        <form action="https://doity.com.br/admin/pesquisas/edit/1402" novalidate="novalidate"
+                            id="PesquisaAdminEditForm" method="post" accept-charset="utf-8">
+                            <div class="content forms config_pesquisa d-flex d_flex-column d_gap-35">
+                                <input type="hidden" name="data[Pesquisa][id]" value="1402" id="PesquisaId">
+                                <div class=" d-flex d_flex-column d_gap-15">
+                                    <div class="input text required"><label for="PesquisaNome" class="text-md">Nome
+                                            <span class="text-red">*</span></label><input name="data[Pesquisa][nome]"
+                                            maxlength="255" type="text" id="PesquisaNome" required="required"
+                                            class="text-md"></div>
+                                    <div class="input textarea"><label for="PesquisaDescricao"
+                                            class="text-md">Descrição<span class="text-red">*</span></label><textarea
+                                            name="data[Pesquisa][descricao]" class="ckeditor text-md" cols="30" rows="6"
+                                            id="PesquisaDescricao"></textarea>
+                                    </div>
+                                </div>
+                                <div class="input text required">
+                                    <label for="PesquisaData" class="text-md">Período<span
+                                            class="text-red">*</span></label>
+                                    <div class="data-row d-flex d_gap-15">
+                                        <input name="data[Pesquisa][data_termino]" type="text"
+                                            placeholder="Data de início" id="PesquisaData" required="required"
+                                            class="text-md input-data" onfocus="(this.type='date')"
+                                            onblur="if(!this.value)this.type='text'">
+                                        <input name="data[Pesquisa][data_disponivel]" type="text"
+                                            placeholder="Data de término" id="PesquisaData" required="required"
+                                            class="text-md input-data" onfocus="(this.type='date')"
+                                            onblur="if(!this.value)this.type='text'">
+                                    </div>
+                                </div>
+                                <div class="input checkbox d-flex"><input type="hidden" name="data[Pesquisa][ativo]"
+                                        id="PesquisaAtivo_" value="0"><input type="checkbox"
+                                        name="data[Pesquisa][ativo]" checked="checked" value="1"
+                                        id="PesquisaAtivo"><label for="PesquisaAtivo">Disponível</label></div>
+                                <div class="opcoes_enviar_para">
+                                    <fieldset>
+                                        <legend class="text-md">Enviar pesquisa para<span class="text-red">*</span>
+                                        </legend>
+                                        <div class="radio-row d-flex d_gap-15">
+                                            <div class="d-flex d_align-center">
+                                                <input type="radio" name="data[Pesquisa][enviar_para]"
+                                                    id="PesquisaEnviarPara0" value="0" checked="checked"
+                                                    required="required" class="rating-input">
+                                                <label for="PesquisaEnviarPara0" class="text-md">Todos
+                                                    confirmados</label>
+                                            </div>
+                                            <div class="d-flex d_align-center">
+                                                <input type="radio" name="data[Pesquisa][enviar_para]"
+                                                    id="PesquisaEnviarPara1" value="1" required="required"
+                                                    class="rating-input">
+                                                <label for="PesquisaEnviarPara1" class="text-md">Só credenciados</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="row buttons d-flex d_justify-between d_gap-15">
+                            <a class="button button-md-alt button-gray" href="../index.html">Cancelar</a>
+
+                            <input class="button button-md-alt button-red text-md text-l" type="submit" value="Cadastrar">
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <div id="footer">
+                            <p>
+                            </p>
+                            <p>Desenvolvido por <a href="http://doity.com.br/" target="_blank">Doity Plataforma de
+                                    Eventos</a></p>
+                            <p>- 2025 - Todos os direitos reservados
+                            </p>
+                            <p><a href="https://ajuda.doity.com.br/" target="_blank">Central de Ajuda</a>
+                                - <a href="#">Entre em Contato</a></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/components.js"></script>
+
+</body>
+
+</html>

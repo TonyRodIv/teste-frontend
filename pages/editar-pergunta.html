@@ -41,9 +41,8 @@
                     <div class="headPage">
                         <div class="breadcrumb">
                             <p class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"><a
-                                    href="..//index.html">Painel</a><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
+                                    href="..//index.html">Painel</a><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087" stroke="#FF2B34"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg> Pesquisa de Satisfação</p>
@@ -91,27 +90,18 @@
                                                 <input type="checkbox" name="data[PesquisaPergunta][obrigatorio]"
                                                     value="1" id="PesquisaPerguntaObrigatorio">
 
-                                                <label for="PesquisaPerguntaObrigatorio"
-                                                    ">Obrigatório</label>
+                                                <label for="PesquisaPerguntaObrigatorio" ">Obrigatório</label>
                                             </div>
 
                                         </div>
 
-                                        <div class="row buttons d-flex d_justify-between d_gap-15">
-                                            <a class="button button-md-alt button-gray text-md text-l"
-                                                href="../index.html">Cancelar</a>
+                                        <div class=" row buttons d-flex d_justify-between d_gap-15">
+                                                    <a class="button button-md-alt button-gray text-md text-l"
+                                                        href="../index.html">Cancelar</a>
 
-                                            <input class="button button-md-alt button-red text-md text-l" type="submit"
-                                                value="Alterar">
-
-                                            <div style="display:none;">
-                                                <input type="hidden" name="data[_Token][fields]"
-                                                    value="2d012787cbb3931a33b59151f6717abaf8c0f53f%3APesquisaPergunta.id"
-                                                    id="TokenFields14594041">
-                                                <input type="hidden" name="data[_Token][unlocked]" value=""
-                                                    id="TokenUnlocked1254747107">
+                                                    <input class="button button-md-alt button-red text-md text-l"
+                                                        type="submit" id="btn-survey" value="Alterar">
                                             </div>
-                                        </div>
 
                                     </form>
 
@@ -134,6 +124,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container" class="modal-overlay">
+        <div id="content" style="width: 100vw;">
+            <div id="osx-modal-content" style="padding: 50px 30px; position: relative;">
+                <a href="#" class="btn-close-modal" onclick="hideModal()">×</a>
+                <div class="icon-container">
+                    <img src="../assets/img/sucess.png" alt="" style="width: 60px;">
+                </div>
+                <div id="osx-modal-title">Pesquisa respondida!</div>
             </div>
         </div>
     </div>
