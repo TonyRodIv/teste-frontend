@@ -123,7 +123,7 @@
                                     </tbody>
                                 </table>
                             </section>
-                            <a id="btn-add-wrapper" onclick="toggleFormulario()"
+                            <a id="btn-add-wrapper" onclick="toggleForm()"
                                 class="button button-gray text-md text-l">Adicionar
                                 pergunta</a>
 
@@ -146,9 +146,9 @@
                                     </div>
 
                                     <div class="buttons d-flex d_justify-between d_gap-15" style="margin-top: 15px;">
-                                        <button type="button" onclick="toggleFormulario()"
+                                        <button type="button" onclick="toggleForm()"
                                             class="button button-md-alt button-gray text-md">Cancelar</button>
-                                        <button type="button" onclick="adicionarNaTabela()"
+                                        <button type="button" onclick="saveQuestion()"
                                             class="button button-md-alt button-red text-md">Salvar Pergunta</button>
                                     </div>
                                 </div>
@@ -216,6 +216,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/data.js"></script>
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/components.js"></script>
 </body>

@@ -2997,7 +2997,7 @@ span.error-marginegative {
 }
 .table-resp td {
   display: block;
-  border-bottom: none !important;
+  /* border-bottom: none !important; */
 }
 
 .table-resp td:before {

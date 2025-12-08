@@ -780,10 +780,6 @@
         border-top: 1px solid #DDD;
     }
 
-    .table-resp td {
-        border-bottom: none !important;
-    }
-
     #osx-container {
         top: 40px;
         left: 0 !important;

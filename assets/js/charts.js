@@ -74,6 +74,7 @@ $(document).ready(function () {
         comentariosSalvos.forEach(function(c) {
             var htmlLinha = `<tr class="comentarios-row"><td class="comentarios-td-comentario text-md">${c.msg}</td><td class="comentarios-td-participante text-md">${c.autor} <br><small style="color:#999; font-size:11px;">${c.data}</small></td></tr>`;
             $tbody.prepend(htmlLinha);
+            $tbody.find('tr:last').remove();
         });
     }
 })

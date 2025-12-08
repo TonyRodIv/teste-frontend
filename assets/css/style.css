@@ -273,9 +273,25 @@ input[type="radio"] {
 
 .table-wrapper {
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 15px;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch; 
+    padding-bottom: 5px; 
+}
+
+.table-resp {
+    min-width: 740px !important; 
+    border-collapse: separate; 
+    border-spacing: 0;
+}
+
+td[data-th="Ações"] {
+    display: flex !important;  
+    flex-direction: row !important;
+    flex-wrap: nowrap !important; 
+    align-items: center;
+    gap: 8px;                    
+    white-space: nowrap;           
+    width: 1%;                  
 }
 
 .table-resp {
@@ -290,7 +306,7 @@ input[type="radio"] {
     width: 100%;
     margin-top: 1rem;
     background-color: #ffffff;
-    border: 1px solid #EBEBEB;
+    /* border: 1px solid #EBEBEB; */
     border-radius: 15px;
     overflow: hidden;
 }
@@ -477,3 +493,4 @@ input[type="radio"] {
 #osx-modal-content {
     animation: slideUpFade 0.4s ease-out forwards;
 }
+
