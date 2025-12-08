@@ -1,6 +1,7 @@
 # Teste Front-end
 Este repositório contém o desafio técnico para a vaga de Front-end na Doity.
 
+
 ## 🎯 Objetivo  
 Desenvolver a interface da feature **Pesquisa de Satisfaçāo**, seguindo o layout, comportamento e orientações do projeto no Figma.
 
