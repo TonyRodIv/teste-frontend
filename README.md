@@ -5,7 +5,7 @@ Este repositório contém o desafio técnico para a vaga de Front-end na Doity.
 - Para rodar o projeto só precisa abrir o arquivo index.html em um navegador compatível ou utilizar o live server do VsCode.
 - Também é possível vizualizar o site do projeto pelo link que está na barra lateral "about" do GitHub.
 
-## 📹 Instruções em vídeo  
+## 📹 Vídeo sobre o projeto 
 
 [🔗 **Clique aqui para assistir ao vídeo explicativo**](https://youtu.be/UpDlr89d62A?si=mA_1h4dYZ9YNQuZg)
 
