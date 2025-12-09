@@ -7,7 +7,7 @@ Este repositório contém o desafio técnico para a vaga de Front-end na Doity.
 
 ## 📹 Instruções em vídeo  
 
-[🔗 **Clique aqui para assistir ao vídeo explicativo**](SEU_LINK_AQUI)
+[🔗 **Clique aqui para assistir ao vídeo explicativo**](https://youtu.be/UpDlr89d62A?si=mA_1h4dYZ9YNQuZg)
 
 ## 📋 Principais mudanças realizadas  
 - Reestruturação das pastas as separando por tipo de arquivo.
